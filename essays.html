@@ -17,7 +17,7 @@
     <link rel="manifest" href="./site.webmanifest">
 </head>
 
-<body class="font-[Ubuntu]">
+<body class="font-[Ubuntu] flex flex-col min-h-screen">
     <div class="navbar bg-base-100 shadow-sm">
         <div class="navbar-start">
             <div class="dropdown">
@@ -49,28 +49,30 @@
         </div>
     </div>
 
-    <ul class="list bg-base-100 rounded-box shadow-md lg:px-40">
+    <main class="grow">
+        <ul class="list bg-base-100 rounded-box shadow-md lg:px-40">
 
-        <li class="list-row flex flex-col sm:flex-row">
-            <div class="flex flex-row gap-4">
-                <img class="size-24 rounded-box" src="./paper.png" />
-                <div class="text-xl">“Class Struggle” in the Roman Republic:
-                    Difficulty and Progress in Utilizing a Marxist Framework to Understand Ancient Issues</div>
-            </div>
-            <div class="text-lg uppercase font-semibold opacity-60">A Historical Analysis of Class Struggle in Late
-                Republican Rome</div>
-            <div class="flex flex-row gap-4">
-                <a href="vma-class-struggle.pdf" target="_blank"><button
-                        class="btn btn-soft btn-primary w-30 h-16 text-2xl">View</button></a>
-                <a href="vma-class-struggle.pdf" download><button
-                        class="btn btn-soft btn-primary w-16 h-16 text-2xl p-0"><img class="w-13 h-13"
-                            src="download.png"></button></a>
-            </div>
-        </li>
+            <li class="list-row flex flex-col sm:flex-row">
+                <div class="flex flex-row gap-4">
+                    <img class="size-24 rounded-box" src="./paper.png" />
+                    <div class="text-xl">“Class Struggle” in the Roman Republic:
+                        Difficulty and Progress in Utilizing a Marxist Framework to Understand Ancient Issues</div>
+                </div>
+                <div class="text-lg uppercase font-semibold opacity-60">A Historical Analysis of Class Struggle in Late
+                    Republican Rome</div>
+                <div class="flex flex-row gap-4">
+                    <a href="vma-class-struggle.pdf" target="_blank"><button
+                            class="btn btn-soft btn-primary w-30 h-16 text-2xl">View</button></a>
+                    <a href="vma-class-struggle.pdf" download><button
+                            class="btn btn-soft btn-primary w-16 h-16 text-2xl p-0"><img class="w-13 h-13"
+                                src="download.png"></button></a>
+                </div>
+            </li>
 
 
 
-    </ul>
+        </ul>
+    </main>
 
     <footer class="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
         <p class="font-bold">

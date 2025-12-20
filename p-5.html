@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory's Portfolio</title>
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+</head>
+
+<body class="font-[Ubuntu] flex flex-col min-h-screen">
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="-1"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a class="text-2xl" href="projects.html">Projects</a></li>
+                    <li><a class="text-2xl" href="essays.html">Essays</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="btn btn-ghost text-2xl text-primary font-[Alegreya]">Victory Ma<span
+                    class="text-white">|
+                    Portfolio</span></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-2xl">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="essays.html">Essays</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a href="contact.html" class="btn text-lg lg:text-2xl">Contact</a>
+        </div>
+    </div>
+
+    <main class="grow">
+        <div class="flex flex-col items-center gap-4">
+            <h1 class="text-2xl font-[Alegreya] pt-4 px-4">Roster Management / NBA Front Office Simulator <i>Video
+                    Demo</i>
+            </h1>
+            <video class="w-9/10 lg:w-5/10" controls>
+                <source src="p-5.mp4" type="video/mp4">
+                <script>
+                    var video = document.currentScript.parentElement;
+                    video.volume = 0.10;
+                </script>
+                Your browser does not support the video tag.
+            </video>
+            <h2 class="text-xl pb-4">Music by <a class="text-primary hover:text-primary-content"
+                    href="https://www.youtube.com/watch?v=DVEUcbPkb-c" target="_blank">
+                    <i>Stream of
+                        Melodies</i></a></h2>
+        </div>
+    </main>
+
+    <footer class="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
+        <p class="font-bold">
+            Created by Victory Ma - 2025 👨🏻‍💻
+            <br />
+            No A.I. was used in the making of this website.
+        </p>
+    </footer>
+
+</body>
+
+</html>

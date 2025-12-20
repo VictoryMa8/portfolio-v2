@@ -21,7 +21,7 @@
     <link rel="manifest" href="./site.webmanifest">
 </head>
 
-<body class="font-[Ubuntu]">
+<body class="font-[Ubuntu] flex flex-col min-h-screen">
     <div class="navbar bg-base-100 shadow-sm">
         <div class="navbar-start">
             <div class="dropdown">
@@ -52,135 +52,154 @@
         </div>
     </div>
 
-    <div class="hero bg-base-200 py-10">
-        <div class="hero-content flex-col lg:flex-row-reverse items-center align-middle">
-            <img src="./me.jpg" class="w-9/10 lg:max-w-sm rounded-full shadow-2xl border-primary border-8" />
-            <div class="text-right w-9/10 lg:max-w-1/2">
-                <h1 class="text-4xl lg:text-6xl font-bold">Hey, I'm <a
-                        href="https://www.linkedin.com/in/victory-ma-724942256/" target="_blank"
-                        class="text-primary hover:text-primary-content transition duration-200 ease-in-out">Victory</a>
-                    👨🏻‍💻
-                    👋🏻</h1>
-                <h2 class="text-2xl lg:text-3xl italic pt-8 font-[Alegreya]">I'm senior at St. Olaf College
-                    pursuing a B.A. in
-                    <span class="text-primary">Computer
-                        Science and History</span>
-                </h2>
-                <p class="py-8 text-xl lg:text-2xl font-[Alegreya]">
-                    Welcome to my website. Come check out my coding projects, read my essays, or contact
-                    me!
-                </p>
-                <a href="projects.html"><button class="btn btn-primary text-xl">Projects 💾</button></a>
-                <a href="essays.html"><button href="essays.html" class="btn btn-primary text-xl">Essays 📝</button></a>
+    <main class="grow">
+        <div class="hero bg-base-200 py-10">
+            <div class="hero-content flex-col lg:flex-row-reverse items-center align-middle">
+                <img src="./me.jpg" class="w-9/10 lg:max-w-sm rounded-full shadow-2xl border-primary border-8" />
+                <div class="text-right w-9/10 lg:max-w-1/2">
+                    <h1 class="text-4xl lg:text-6xl font-bold">Hey, I'm <a
+                            href="https://www.linkedin.com/in/victory-ma-724942256/" target="_blank"
+                            class="text-primary hover:text-primary-content transition duration-200 ease-in-out">Victory</a>
+                        👨🏻‍💻
+                        👋🏻</h1>
+                    <h2 class="text-2xl lg:text-3xl italic pt-8 font-[Alegreya]">I'm senior at St. Olaf College
+                        pursuing a B.A. in
+                        <span class="text-primary">Computer
+                            Science and History</span>
+                    </h2>
+                    <p class="py-8 text-xl lg:text-2xl font-[Alegreya]">
+                        Welcome to my website. Come check out my coding projects, read my essays, or contact
+                        me!
+                    </p>
+                    <div class="flex flex-row justify-end items-center gap-2">
+                        <a href="https://www.linkedin.com/in/victory-ma-724942256/" target="_blank"><img
+                                class="bg-primary p-1 rounded-full w-20 transition hover:bg-primary-content ease-in-out"
+                                src="linkedin.png"></a>
+                        <a href="https://github.com/VictoryMa8" target="_blank"><img
+                                class="bg-primary p-1 rounded-full w-20 transition hover:bg-primary-content ease-in-out"
+                                src="github.png"></a>
+                        <a href="projects.html"><button class="h-16 btn btn-primary text-xl">Projects 💾</button></a>
+                        <a href="essays.html"><button href="essays.html" class=" h-16 btn btn-primary text-xl">Essays
+                                📝</button></a>
+
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <ul class="bg-base-200 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical px-10 lg:px-30">
-        <h1 class="text-3xl lg:text-5xl font-bold text-center mb-5">My Journey 🗺️</h1>
-        <li>
-            <div class="timeline-middle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
-                    <path fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="timeline-start mb-10 md:text-end lg:ml-10">
-                <time class="font-mono italic text-xl">2022</time>
-                <div class="text-lg font-black">Enrolled at <a href="https://wp.stolaf.edu" target="_blank"
-                        class="text-primary">St.
-                        Olaf College</a></div>
-                After much deliberation, I decided to take myself to Northfield, Minnesota and pursue a Bachelor of Arts
-                in Computer Science and History at the small private liberal arts college of St. Olaf College.
-            </div>
-            <hr />
-        </li>
-        <li>
-            <hr />
-            <div class="timeline-middle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
-                    <path fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="timeline-end md:mb-10">
-                <time class="font-mono italic text-xl">2023</time>
-                <div class="text-lg font-black">Worked Toward & Received <a
-                        href="https://www.linkedin.com/in/victory-ma-724942256/details/certifications/" target="_blank"
-                        class="text-primary">Certifications</a></div>
-                Outside of class, I worked towards completing various projects and certifications,
-                mostly pertaining to
-                frontend and backend web development. I also completed courses on data structures in C++ and software
-                design.
-            </div>
-            <hr />
-        </li>
-        <li>
-            <hr />
-            <div class="timeline-middle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
-                    <path fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="timeline-start mb-10 md:text-end">
-                <time class="font-mono italic text-xl">2024</time>
-                <div class="text-lg font-black">Worked for the <a href="https://wp.stolaf.edu/mscs" target="_blank"
-                        class="text-primary">MSCS Department</a>
+        <ul class="bg-base-200 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical px-10 lg:px-30">
+            <h1 class="text-3xl lg:text-5xl font-bold text-center mb-5">My Journey 🗺️</h1>
+            <li>
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                            clip-rule="evenodd" />
+                    </svg>
                 </div>
-                I worked under a professor teaching an introductory statistics course, and continued completing personal
-                projects and certifications. I completed courses on ethics in software design, statistics, hardware
-                design, and
-                analyzing algorithms.
-            </div>
-            <hr />
-        </li>
-        <li>
-            <hr />
-            <div class="timeline-middle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
-                    <path fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="timeline-end md:mb-10">
-                <time class="font-mono italic text-xl">2025</time>
-                <div class="text-lg font-black">Started <a
-                        href="https://www.linkedin.com/posts/victory-ma-724942256_im-excited-to-announce-that-ill-be-joining-activity-7320237655403741185-f_WR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8koYwB3nEPEmVlPmMq4FWCpzJ87lK0gMw"
-                        target="_blank" class="text-primary">Software Engineer
-                        Internship</a></div>
-                In the spring, I completed courses on data science, statistical learning, and machine learning. I also
-                won the People's
-                Choice Award at St. Olaf College's Ole Cup 2025 alongside my wonderful team. I was also a teaching
-                assistant for the computer science department. In the summer, I worked at GCS Geospatial as a Software
-                Engineer intern and continued working on personal projects.
-            </div>
-            <hr />
-        </li>
-        <li>
-            <hr />
-            <div class="timeline-middle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
-                    <path fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clip-rule="evenodd" />
-                </svg>
-            </div>
-            <div class="timeline-start mb-10 md:text-end">
-                <time class="font-mono italic text-xl">Present</time>
-                <div class="text-lg font-black">Working as an <a href="https://www.projectfriendshipmentoring.org/"
-                        target="_blank" class="text-primary">App Developer
-                    </a></div>
-                I recently worked as a teaching assistant for a senior-level algorithms course and as an App Developer
-                for Project Friendship, a local non-profit organization. I finished a course on Quantum Computing, and
-                will go into 2026 working as a teaching assistant for both J-Term and the spring semester.
-            </div>
-        </li>
-    </ul>
+                <div class="timeline-start mb-10 md:text-end lg:ml-10">
+                    <time class="font-mono italic text-xl">2022</time>
+                    <div class="text-lg font-black">Enrolled at <a href="https://wp.stolaf.edu" target="_blank"
+                            class="text-primary">St.
+                            Olaf College</a></div>
+                    After much deliberation, I decided to take myself to Northfield, Minnesota and pursue a Bachelor of
+                    Arts
+                    in Computer Science and History at the small private liberal arts college of St. Olaf College.
+                </div>
+                <hr />
+            </li>
+            <li>
+                <hr />
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="timeline-end md:mb-10">
+                    <time class="font-mono italic text-xl">2023</time>
+                    <div class="text-lg font-black">Worked Toward & Received <a
+                            href="https://www.linkedin.com/in/victory-ma-724942256/details/certifications/"
+                            target="_blank" class="text-primary">Certifications</a></div>
+                    Outside of class, I worked towards completing various projects and certifications,
+                    mostly pertaining to
+                    frontend and backend web development. I also completed courses on data structures in C++ and
+                    software
+                    design.
+                </div>
+                <hr />
+            </li>
+            <li>
+                <hr />
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="timeline-start mb-10 md:text-end">
+                    <time class="font-mono italic text-xl">2024</time>
+                    <div class="text-lg font-black">Worked for the <a href="https://wp.stolaf.edu/mscs" target="_blank"
+                            class="text-primary">MSCS Department</a>
+                    </div>
+                    I worked under a professor teaching an introductory statistics course, and continued completing
+                    personal
+                    projects and certifications. I completed courses on ethics in software design, statistics, hardware
+                    design, and
+                    analyzing algorithms.
+                </div>
+                <hr />
+            </li>
+            <li>
+                <hr />
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="timeline-end md:mb-10">
+                    <time class="font-mono italic text-xl">2025</time>
+                    <div class="text-lg font-black">Started <a
+                            href="https://www.linkedin.com/posts/victory-ma-724942256_im-excited-to-announce-that-ill-be-joining-activity-7320237655403741185-f_WR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8koYwB3nEPEmVlPmMq4FWCpzJ87lK0gMw"
+                            target="_blank" class="text-primary">Software Engineer
+                            Internship</a></div>
+                    In the spring, I completed courses on data science, statistical learning, and machine learning. I
+                    also
+                    won the People's
+                    Choice Award at St. Olaf College's Ole Cup 2025 alongside my wonderful team. I was also a teaching
+                    assistant for the computer science department. In the summer, I worked at GCS Geospatial as a
+                    Software
+                    Engineer intern and continued working on personal projects.
+                </div>
+                <hr />
+            </li>
+            <li>
+                <hr />
+                <div class="timeline-middle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="timeline-start mb-10 md:text-end">
+                    <time class="font-mono italic text-xl">Present</time>
+                    <div class="text-lg font-black">Working as an <a href="https://www.projectfriendshipmentoring.org/"
+                            target="_blank" class="text-primary">App Developer
+                        </a></div>
+                    I recently worked as a teaching assistant for a senior-level algorithms course and as an App
+                    Developer
+                    for Project Friendship, a local non-profit organization. I finished a course on Quantum Computing,
+                    and
+                    will go into 2026 working as a teaching assistant for both J-Term and the spring semester.
+                </div>
+            </li>
+        </ul>
+    </main>
 
     <footer class="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
         <p class="font-bold">

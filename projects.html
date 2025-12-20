@@ -17,7 +17,7 @@
     <link rel="manifest" href="./site.webmanifest">
 </head>
 
-<body class="font-[Ubuntu]">
+<body class="font-[Ubuntu] flex flex-col min-h-screen">
     <div class="navbar bg-base-100 shadow-sm">
         <div class="navbar-start">
             <div class="dropdown">
@@ -49,59 +49,86 @@
         </div>
     </div>
 
-    <ul class="list bg-base-100 rounded-box shadow-md lg:px-40">
+    <main class="grow">
+        <ul class="list bg-base-100 rounded-box shadow-md lg:px-40">
 
-        <li class="list-row flex flex-col sm:flex-row">
-            <img class="w-30 rounded-box" src="./curious.png" />
-            <div>
-                <div class="text-2xl">Curious Vexillologist</div>
+            <li class="list-row flex flex-col sm:flex-row">
+                <img class="w-30 rounded-box" src="./curious.png" />
+                <div>
+                    <div class="text-2xl">Curious Vexillologist</div>
 
-                <div class="text-lg uppercase font-semibold opacity-60">A quizzing tool for vexillology
-                    nerds 🏳️</div>
-            </div>
-            <a href="https://vexillology-quiz-v2.fly.dev/" target="_blank"><button
-                    class="btn btn-soft btn-primary text-2xl h-16">Live Demo</button></a>
-        </li>
-
-
-        <li class="list-row flex flex-col sm:flex-row">
-            <img class="size-24 rounded-box" src="./ekklesia.png" />
-            <div>
-                <div class="text-2xl">Ekklesia</div>
-                <div class="text-lg uppercase font-semibold opacity-60">A study companion for those who enjoy the
-                    pomodoro
-                    technique ☑️</div>
-            </div>
-            <a href="https://ekklesia-7ek1.onrender.com/" target="_blank"><button
-                    class="btn btn-soft btn-primary text-2xl h-16">Live Demo</button></a>
-
-        </li>
+                    <div class="text-lg uppercase font-semibold opacity-60">A quizzing tool for vexillology
+                        nerds 🏳️</div>
+                </div>
+                <a href="https://vexillology-quiz-v2.fly.dev/" target="_blank"><button
+                        class="btn btn-soft btn-primary text-2xl h-16">Live Demo</button></a>
+            </li>
 
 
-        <li class="list-row flex flex-col sm:flex-row">
-            <img class="size-24 rounded-box" src="./bloommates.svg" />
-            <div>
-                <div class="text-2xl">BloomMates</div>
-                <div class="text-lg uppercase font-semibold opacity-60">Ole Cup 2025 People's Choice Award; A mental
-                    health
-                    and social connections app centered around giving flowers 🌸</div>
-            </div>
-            <a href="https://thebloommates.com/" target="_blank"><button
-                    class="btn btn-soft btn-primary w-40 text-2xl">Website</button></a>
-        </li>
+            <li class="list-row flex flex-col sm:flex-row">
+                <img class="size-24 rounded-box" src="./ekklesia.png" />
+                <div>
+                    <div class="text-2xl">Ekklesia</div>
+                    <div class="text-lg uppercase font-semibold opacity-60">A study companion for those who enjoy the
+                        pomodoro
+                        technique ☑️</div>
+                </div>
+                <a href="https://ekklesia-7ek1.onrender.com/" target="_blank"><button
+                        class="btn btn-soft btn-primary text-2xl h-16">Live Demo</button></a>
 
-        <li class="list-row flex flex-col sm:flex-row">
-            <div class="text-8xl">🏺</div>
-            <div>
-                <div class="text-2xl">The Odyssey: Visualized</div>
-                <div class="text-lg uppercase font-semibold opacity-60">A visual interpretation of The Odyssey by Homer;
-                    website, artwork, and essay included 🏛️</div>
-            </div>
-            <a href="https://victoryma8.github.io/the-odyssey/" target="_blank"><button
-                    class="btn btn-soft btn-primary w-40 text-2xl">Website</button></a>
-        </li>
+            </li>
 
-    </ul>
+
+            <li class="list-row flex flex-col sm:flex-row">
+                <img class="size-24 rounded-box" src="./bloommates.svg" />
+                <div>
+                    <div class="text-2xl">BloomMates</div>
+                    <div class="text-lg uppercase font-semibold opacity-60">Ole Cup 2025 People's Choice Award; A mental
+                        health
+                        and social connections app centered around giving flowers 🌸</div>
+                </div>
+                <a href="https://thebloommates.com/" target="_blank"><button
+                        class="btn btn-soft btn-primary w-40 text-2xl">Website</button></a>
+            </li>
+
+            <li class="list-row flex flex-col sm:flex-row">
+                <div class="text-8xl">🏺</div>
+                <div>
+                    <div class="text-2xl">The Odyssey: Visualized</div>
+                    <div class="text-lg uppercase font-semibold opacity-60">A visual interpretation of The Odyssey by
+                        Homer;
+                        website, artwork, and essay included 🏛️</div>
+                </div>
+                <a href="https://victoryma8.github.io/the-odyssey/" target="_blank"><button
+                        class="btn btn-soft btn-primary w-40 text-2xl">Website</button></a>
+            </li>
+
+            <li class="list-row flex flex-col sm:flex-row">
+                <div class="text-8xl">🏀</div>
+                <div>
+                    <div class="text-2xl">Roster Management System</div>
+                    <div class="text-lg uppercase font-semibold opacity-60">A roster management system that allows users
+                        to
+                        simulate working as the front office of an NBA organization ⛹️‍♂️</div>
+                </div>
+                <a href="./p-5.html" target="_blank"><button
+                        class="btn btn-soft btn-primary w-40 text-2xl">Video</button></a>
+            </li>
+
+            <li class="list-row flex flex-col sm:flex-row">
+                <div class="text-8xl">🌍</div>
+                <div>
+                    <div class="text-2xl">Data Analysis of Sociopolitical Environments & Food Security
+                    </div>
+                    <div class="text-lg uppercase font-semibold opacity-60">An exploratory data analysis of food
+                        security in Africa using a wide variety of variables 🥙</div>
+                </div>
+                <a href="vma-camilli-food.html" target="_blank"><button
+                        class="btn btn-soft btn-primary w-40 text-2xl">Website</button></a>
+            </li>
+
+        </ul>
+    </main>
 
     <footer class="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
         <p class="font-bold">
