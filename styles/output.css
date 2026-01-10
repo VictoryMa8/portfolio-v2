@@ -5670,6 +5670,40 @@
       grid-auto-rows: max-content;
     }
   }
+  .card-actions {
+    @layer daisyui.l1.l2.l3 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: calc(0.25rem * 2);
+    }
+  }
+  .card-actions {
+    @layer daisyui.l1.l2.l3 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: calc(0.25rem * 2);
+    }
+  }
+  .card-title {
+    @layer daisyui.l1.l2.l3 {
+      display: flex;
+      align-items: center;
+      gap: calc(0.25rem * 2);
+      font-size: var(--cardtitle-fs, 1.125rem);
+      font-weight: 600;
+    }
+  }
+  .card-title {
+    @layer daisyui.l1.l2.l3 {
+      display: flex;
+      align-items: center;
+      gap: calc(0.25rem * 2);
+      font-size: var(--cardtitle-fs, 1.125rem);
+      font-weight: 600;
+    }
+  }
   .block {
     display: block;
   }
@@ -5762,8 +5796,26 @@
   .w-96 {
     width: calc(var(--spacing) * 96);
   }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
   .max-w-50 {
     max-width: calc(var(--spacing) * 50);
+  }
+  .max-w-80 {
+    max-width: calc(var(--spacing) * 80);
+  }
+  .max-w-90 {
+    max-width: calc(var(--spacing) * 90);
+  }
+  .max-w-100 {
+    max-width: calc(var(--spacing) * 100);
+  }
+  .max-w-120 {
+    max-width: calc(var(--spacing) * 120);
+  }
+  .max-w-150 {
+    max-width: calc(var(--spacing) * 150);
   }
   .grow {
     flex-grow: 1;
@@ -6548,6 +6600,11 @@
       }
     }
   }
+  .sm\:w-160 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 160);
+    }
+  }
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row;
@@ -6561,6 +6618,11 @@
   .md\:block {
     @media (width >= 48rem) {
       display: block;
+    }
+  }
+  .md\:max-w-160 {
+    @media (width >= 48rem) {
+      max-width: calc(var(--spacing) * 160);
     }
   }
   .md\:text-end {
@@ -6583,6 +6645,66 @@
       display: none;
     }
   }
+  .lg\:card-side {
+    @media (width >= 64rem) {
+      @layer daisyui.l1.l2 {
+        align-items: stretch;
+        flex-direction: row;
+        :where(figure:first-child) {
+          overflow: hidden;
+          border-start-start-radius: inherit;
+          border-start-end-radius: unset;
+          border-end-start-radius: inherit;
+          border-end-end-radius: unset;
+        }
+        :where(figure:last-child) {
+          overflow: hidden;
+          border-start-start-radius: unset;
+          border-start-end-radius: inherit;
+          border-end-start-radius: unset;
+          border-end-end-radius: inherit;
+        }
+        figure > * {
+          max-width: unset;
+        }
+        :where(figure > *) {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .lg\:card-side {
+    @media (width >= 64rem) {
+      @layer daisyui.l1.l2 {
+        align-items: stretch;
+        flex-direction: row;
+        :where(figure:first-child) {
+          overflow: hidden;
+          border-start-start-radius: inherit;
+          border-start-end-radius: unset;
+          border-end-start-radius: inherit;
+          border-end-end-radius: unset;
+        }
+        :where(figure:last-child) {
+          overflow: hidden;
+          border-start-start-radius: unset;
+          border-start-end-radius: inherit;
+          border-end-start-radius: unset;
+          border-end-end-radius: inherit;
+        }
+        figure > * {
+          max-width: unset;
+        }
+        :where(figure > *) {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
   .lg\:h-70 {
     @media (width >= 64rem) {
       height: calc(var(--spacing) * 70);
@@ -6593,9 +6715,24 @@
       width: calc(5/10 * 100%);
     }
   }
+  .lg\:w-100 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 100);
+    }
+  }
   .lg\:w-120 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 120);
+    }
+  }
+  .lg\:w-150 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 150);
+    }
+  }
+  .lg\:w-160 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 160);
     }
   }
   .lg\:max-w-1\/2 {
