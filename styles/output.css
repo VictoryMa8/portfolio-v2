@@ -5728,9 +5728,25 @@
   .table {
     display: table;
   }
+  .size-20 {
+    width: calc(var(--spacing) * 20);
+    height: calc(var(--spacing) * 20);
+  }
+  .size-22 {
+    width: calc(var(--spacing) * 22);
+    height: calc(var(--spacing) * 22);
+  }
   .size-24 {
     width: calc(var(--spacing) * 24);
     height: calc(var(--spacing) * 24);
+  }
+  .size-26 {
+    width: calc(var(--spacing) * 26);
+    height: calc(var(--spacing) * 26);
+  }
+  .size-28 {
+    width: calc(var(--spacing) * 28);
+    height: calc(var(--spacing) * 28);
   }
   .h-5 {
     height: calc(var(--spacing) * 5);
@@ -5743,6 +5759,18 @@
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
+  }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
+  .h-26 {
+    height: calc(var(--spacing) * 26);
+  }
+  .h-30 {
+    height: calc(var(--spacing) * 30);
   }
   .min-h-screen {
     min-height: 100vh;
@@ -5765,6 +5793,9 @@
   }
   .w-9\/10 {
     width: calc(9/10 * 100%);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
   }
   .w-13 {
     width: calc(var(--spacing) * 13);
@@ -5795,6 +5826,9 @@
   }
   .w-96 {
     width: calc(var(--spacing) * 96);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
   }
   .max-w-50 {
     max-width: calc(var(--spacing) * 50);
@@ -5949,6 +5983,9 @@
   }
   .bg-base-200 {
     background-color: var(--color-base-200);
+  }
+  .bg-base-300 {
+    background-color: var(--color-base-300);
   }
   .bg-indigo-900 {
     background-color: var(--color-indigo-900);
@@ -6603,14 +6640,34 @@
       display: block;
     }
   }
-  .md\:max-w-160 {
-    @media (width >= 48rem) {
-      max-width: calc(var(--spacing) * 160);
-    }
-  }
   .md\:max-w-200 {
     @media (width >= 48rem) {
       max-width: calc(var(--spacing) * 200);
+    }
+  }
+  .md\:px-40 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 40);
+    }
+  }
+  .md\:px-50 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 50);
+    }
+  }
+  .md\:px-60 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 60);
+    }
+  }
+  .md\:px-100 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 100);
+    }
+  }
+  .md\:px-400 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 400);
     }
   }
   .md\:text-end {
