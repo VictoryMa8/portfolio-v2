@@ -78,7 +78,8 @@
     <main class="grow">
         <div class="hero bg-base-200 py-10">
             <div class="hero-content flex-col lg:flex-row-reverse items-center align-middle">
-                <img src="./me.jpg" class="w-9/10 lg:max-w-sm rounded-full shadow-2xl border-primary border-8" />
+                <img src="./me.jpg"
+                    class="w-9/10 md:max-w-sm md:ml-4 mb-4 rounded-full shadow-2xl border-primary border-8" />
                 <div class="text-right w-9/10 lg:max-w-1/2">
                     <h1 class="text-4xl lg:text-6xl font-bold">Hey, I'm <a
                             href="https://www.linkedin.com/in/victory-ma-724942256/" target="_blank"
@@ -91,9 +92,15 @@
                             Science and History</span>
                     </h2>
                     <p class="py-8 text-xl lg:text-2xl font-[Alegreya]">
-                        Welcome to my website. Come check out my coding projects, read my essays, or contact
+                        Welcome to my website. Come check out my coding projects, read my historical essays, or contact
                         me!
                     </p>
+                    <div class="flex flex-wrap md:flex-row items-center justify-end gap-2 mb-4"><img class="w-20"
+                            src="R-logo.png"><img class="w-20" src="python-logo.png">
+                        <img id="aws-logo1" class="w-20" src="aws-logo1.png"><img id="aws-logo2" class="w-20"
+                            src="aws-logo2.png"><img class="w-24" src="django-logo.png"><img class="w-20"
+                            src="tailwind-logo.png">
+                    </div>
                     <div class="flex flex-row justify-end items-center gap-2">
                         <a href="https://www.linkedin.com/in/victory-ma-724942256/" target="_blank"><img
                                 class="bg-primary p-1 rounded-full w-20 transition hover:bg-primary-content ease-in-out"
@@ -267,7 +274,17 @@
         document.addEventListener('DOMContentLoaded', () => {
             // Get theme contorller and current theme
             const themeController = document.getElementById('theme-controller');
-            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const currentTheme = document.documentElement.getAttribute('data-theme')
+
+            // Light/dark AWS logo
+            const darkAWS = document.getElementById('aws-logo1');
+            const lightAWS = document.getElementById('aws-logo2');
+
+            if (savedTheme === 'dark') {
+                darkAWS.classList.add('hidden');
+            } else {
+                lightAWS.classList.add('hidden');
+            }
 
             // Controller is checked if the current theme light
             themeController.checked = currentTheme === 'light';
@@ -278,10 +295,14 @@
                 if (event.target.checked) {
                     document.documentElement.setAttribute('data-theme', 'light');
                     localStorage.setItem('theme', 'light');
+                    lightAWS.classList.add("hidden")
+                    darkAWS.classList.remove("hidden")
                     // If controller is not checked, set theme to dark
                 } else {
                     document.documentElement.setAttribute('data-theme', 'dark');
                     localStorage.setItem('theme', 'dark');
+                    darkAWS.classList.add('hidden')
+                    lightAWS.classList.remove('hidden')
                 }
             })
         });
