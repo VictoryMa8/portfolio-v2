@@ -1,24 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Victory's Portfolio</title>
-    <link rel="stylesheet" href="./styles/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
+        rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
     <script>
         // Get theme from local storage (other script block at the bottom of body)
         const savedTheme = localStorage.getItem('theme');
@@ -42,19 +42,22 @@
                     <li><a class="text-2xl" href="projects.html">Projects</a></li>
                     <li><a class="text-2xl" href="essays.html">Essays</a></li>
                     <li><a class="text-2xl" href="blog.html">Blog</a></li>
-                    <li><a class="text-2xl text-primary" href="who.html">Who's Victory?</a></li>
+                    <li>
+                        <a class="text-2xl text-primary" href="who.html">Who's Victory?</a>
+                    </li>
                 </ul>
             </div>
             <a href="index.html" class="btn btn-ghost text-2xl text-primary font-[Alegreya] pl-2">Victory Ma<span
-                    class="text-base-content hidden md:block">|
-                    Portfolio</span></a>
+                    class="text-base-content hidden md:block">| Portfolio</span></a>
         </div>
         <div class="navbar-center hidden lg:flex mx-auto">
             <ul class="menu menu-horizontal px-1 text-2xl">
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="essays.html">Essays</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a class="text-2xl text-primary" href="who.html">Who's Victory?</a></li>
+                <li>
+                    <a class="text-2xl text-primary" href="who.html">Who's Victory?</a>
+                </li>
             </ul>
         </div>
         <div class="navbar-end ml-auto w-27">
@@ -77,7 +80,6 @@
 
     <main class="grow flex flex-col items-center">
         <a href="https://www.linkedin.com/in/victory-ma-724942256/" class="hover-3d my-12 mx-2 cursor-pointer">
-
             <!-- content -->
             <div
                 class="card w-96 lg:w-120 lg:h-70 bg-indigo-900 text-white bg-[radial-gradient(circle_at_bottom_left,#ffffff04_35%,transparent_36%),radial-gradient(circle_at_top_right,#ffffff04_35%,transparent_36%)] bg-size-[4.95em_4.95em]">
@@ -113,6 +115,10 @@
         </a>
     </main>
 
+    <div class="hidden md:flex flex-col items-center">
+        <iframe class="border mb-10" src="vma-resume-june-3.pdf" width="80%" height="1400px"></iframe>
+    </div>
+
     <footer class="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
         <p class="font-bold">
             Created by Victory Ma - 2025 👨🏻‍💻
@@ -124,7 +130,8 @@
         document.addEventListener('DOMContentLoaded', () => {
             // Get theme contorller and current theme
             const themeController = document.getElementById('theme-controller');
-            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const currentTheme =
+                document.documentElement.getAttribute('data-theme');
 
             // Controller is checked if the current theme light
             themeController.checked = currentTheme === 'light';
@@ -140,7 +147,7 @@
                     document.documentElement.setAttribute('data-theme', 'dark');
                     localStorage.setItem('theme', 'dark');
                 }
-            })
+            });
         });
     </script>
 </body>

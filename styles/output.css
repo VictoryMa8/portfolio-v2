@@ -5812,12 +5812,6 @@
   .max-w-100 {
     max-width: calc(var(--spacing) * 100);
   }
-  .min-w-60 {
-    min-width: calc(var(--spacing) * 60);
-  }
-  .shrink-0 {
-    flex-shrink: 0;
-  }
   .grow {
     flex-grow: 1;
   }
@@ -6622,6 +6616,11 @@
   .md\:block {
     @media (width >= 48rem) {
       display: block;
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
     }
   }
   .md\:max-w-150 {
