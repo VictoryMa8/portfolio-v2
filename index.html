@@ -1,314 +1,487 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Victory's Portfolio</title>
-    <link rel="stylesheet" href="./styles/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
     <script>
-        // Get theme from local storage (other script block at the bottom of body)
-        const savedTheme = localStorage.getItem('theme');
-        document.documentElement.setAttribute('data-theme', savedTheme);
+      // Get theme from local storage (other script block at the bottom of body)
+      const savedTheme = localStorage.getItem('theme');
+      document.documentElement.setAttribute('data-theme', savedTheme);
     </script>
-</head>
+  </head>
 
-<body class="font-[Ubuntu] flex flex-col min-h-screen">
+  <body class="font-[Ubuntu] flex flex-col min-h-screen">
     <div class="navbar bg-base-100 shadow-sm">
-        <div class="navbar-start w-27 mr-auto">
-            <div class="dropdown pr-0">
-                <div tabindex="0" role="button" class="btn lg:hidden p-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </div>
-                <ul tabindex="-1"
-                    class="menu menu-sm dropdown-content bg-base-200 rounded-box z-1 mt-3 w-52 py-2 shadow">
-                    <li><a class="text-2xl" href="projects.html">Projects</a></li>
-                    <li><a class="text-2xl" href="essays.html">Essays</a></li>
-                    <li><a class="text-2xl" href="blog.html">Blog</a></li>
-                    <li><a class="text-2xl text-primary" href="who.html">Who's Victory?</a></li>
-                </ul>
-            </div>
-            <a href="index.html" class="btn btn-ghost text-2xl text-primary font-[Alegreya] pl-2">Victory Ma<span
-                    class="text-base-content hidden md:block">|
-                    Portfolio</span></a>
+      <div class="navbar-start w-27 mr-auto">
+        <div class="dropdown pr-0">
+          <div tabindex="0" role="button" class="btn lg:hidden p-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-200 rounded-box z-1 mt-3 w-52 py-2 shadow"
+          >
+            <li><a class="text-2xl" href="projects.html">Projects</a></li>
+            <li><a class="text-2xl" href="essays.html">Essays</a></li>
+            <li><a class="text-2xl" href="blog.html">Blog</a></li>
+            <li>
+              <a class="text-2xl text-primary" href="who.html"
+                >Who's Victory?</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="navbar-center hidden lg:flex mx-auto">
-            <ul class="menu menu-horizontal px-1 text-2xl">
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="essays.html">Essays</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a class="text-2xl text-primary" href="who.html">Who's Victory?</a></li>
-            </ul>
-        </div>
-        <div class="navbar-end ml-auto w-27">
-            <label class="flex cursor-pointer gap-2 mr-2 mt-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-                <input id="theme-controller" type="checkbox" value="light" class="toggle theme-controller" />
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="5" />
-                    <path
-                        d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
-                </svg>
-            </label>
-            <a href="contact.html" class="btn text-lg lg:text-2xl">Contact</a>
-        </div>
+        <a
+          href="index.html"
+          class="btn btn-ghost text-2xl text-primary font-[Alegreya] pl-2"
+          >Victory Ma<span class="text-base-content hidden md:block"
+            >| Portfolio</span
+          ></a
+        >
+      </div>
+      <div class="navbar-center hidden lg:flex mx-auto">
+        <ul class="menu menu-horizontal px-1 text-2xl">
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="essays.html">Essays</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li>
+            <a class="text-2xl text-primary" href="who.html">Who's Victory?</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-end ml-auto w-27">
+        <label class="flex cursor-pointer gap-2 mr-2 mt-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <input
+            id="theme-controller"
+            type="checkbox"
+            value="light"
+            class="toggle theme-controller"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"
+            />
+          </svg>
+        </label>
+        <a href="contact.html" class="btn text-lg lg:text-2xl">Contact</a>
+      </div>
     </div>
 
     <main class="grow">
-        <div class="hero bg-base-200 py-10">
-            <div class="hero-content flex-col lg:flex-row-reverse items-center align-middle">
-                <img src="./me.jpg"
-                    class="w-9/10 md:max-w-sm md:ml-4 mb-4 rounded-full shadow-2xl border-primary border-8" />
-                <div class="text-right w-9/10 lg:max-w-1/2">
-                    <h1 class="text-4xl lg:text-6xl font-bold">Hey, I'm <a
-                            href="https://www.linkedin.com/in/victory-ma-724942256/" target="_blank"
-                            class="text-primary hover:text-primary-content transition duration-200 ease-in-out">Victory</a>
-                        👨🏻‍💻
-                        👋🏻</h1>
-                    <h2 class="text-2xl lg:text-3xl pt-8 font-[Alegreya]">Recent <span class="text-primary italic">Magna
-                            Cum Laude</span> graduate of St.
-                        Olaf College with a <span class="text-primary italic">B.A. in Computer Science and
-                            History</span>
-                    </h2>
-                    <p class="py-8 text-xl lg:text-2xl font-[Alegreya]">
-                        Welcome to my website. Come check out my coding projects, read my historical essays, or contact
-                        me!
-                    </p>
-                    <div class="flex flex-wrap md:flex-row items-center justify-end gap-2 mb-4"><img class="w-20"
-                            src="R-logo.png"><img class="w-20" src="python-logo.png">
-                        <img id="aws-logo1" class="w-20" src="aws-logo1.png"><img id="aws-logo2" class="w-20"
-                            src="aws-logo2.png"><img class="w-24" src="django-logo.png"><img class="w-20"
-                            src="tailwind-logo.png">
-                    </div>
-                    <div class="flex flex-row justify-end items-center gap-2">
-                        <a href="https://www.linkedin.com/in/victory-ma-724942256/" target="_blank"><img
-                                class="bg-primary p-1 rounded-full w-20 transition hover:bg-primary-content ease-in-out"
-                                src="linkedin.png"></a>
-                        <a href="https://github.com/VictoryMa8" target="_blank"><img
-                                class="bg-primary p-1 rounded-full w-20 transition hover:bg-primary-content ease-in-out"
-                                src="github.png"></a>
-                        <a href="projects.html"><button class="h-16 btn btn-primary text-xl">Projects 💾</button></a>
-                        <a href="vma-resume-june-3.pdf" target="_blank"><button
-                                class=" h-16 btn btn-primary text-xl">Resume
-                                📄</button></a>
-
-                    </div>
-                </div>
+      <div class="hero bg-base-200 py-10">
+        <div
+          class="hero-content flex-col lg:flex-row-reverse items-center align-middle"
+        >
+          <img
+            src="./me.jpg"
+            class="w-9/10 md:max-w-sm md:ml-4 mb-4 rounded-full shadow-2xl border-primary border-8"
+          />
+          <div class="text-right w-9/10 lg:max-w-1/2">
+            <h1 class="text-4xl lg:text-6xl font-bold">
+              Hey, I'm
+              <a
+                href="https://www.linkedin.com/in/victory-ma-724942256/"
+                target="_blank"
+                class="text-primary hover:text-primary-content transition duration-200 ease-in-out"
+                >Victory</a
+              >
+              👨🏻‍💻 👋🏻
+            </h1>
+            <h2 class="text-2xl lg:text-3xl pt-8 font-[Alegreya]">
+              Recent
+              <span class="text-primary italic">Magna Cum Laude</span> graduate
+              of St. Olaf College with a
+              <span class="text-primary italic"
+                >B.A. in Computer Science and History</span
+              >
+            </h2>
+            <p class="py-8 text-xl lg:text-2xl font-[Alegreya]">
+              Welcome to my website. Come check out my coding projects, read my
+              historical essays, or contact me!
+            </p>
+            <div
+              class="flex flex-wrap md:flex-row items-center justify-end gap-2 mb-4"
+            >
+              <img class="w-20" src="R-logo.png" /><img
+                class="w-20"
+                src="python-logo.png"
+              />
+              <img id="aws-logo1" class="w-20" src="aws-logo1.png" /><img
+                id="aws-logo2"
+                class="w-20"
+                src="aws-logo2.png"
+              /><img class="w-24" src="django-logo.png" /><img
+                class="w-20"
+                src="tailwind-logo.png"
+              />
             </div>
+            <div class="flex flex-row justify-end items-center gap-2">
+              <a
+                href="https://www.linkedin.com/in/victory-ma-724942256/"
+                target="_blank"
+                ><img
+                  class="bg-primary p-1 rounded-full w-20 transition hover:bg-primary-content ease-in-out"
+                  src="linkedin.png"
+              /></a>
+              <a href="https://github.com/VictoryMa8" target="_blank"
+                ><img
+                  class="bg-primary p-1 rounded-full w-20 transition hover:bg-primary-content ease-in-out"
+                  src="github.png"
+              /></a>
+              <a href="projects.html"
+                ><button class="h-16 btn btn-primary text-xl">
+                  Projects 💾
+                </button></a
+              >
+              <a href="vma-resume-june-3.pdf" target="_blank"
+                ><button class="h-16 btn btn-primary text-xl">
+                  Resume 📄
+                </button></a
+              >
+            </div>
+          </div>
         </div>
+      </div>
 
-        <ul class="bg-base-200 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical px-10 lg:px-30">
-            <h1 class="text-3xl lg:text-5xl font-bold text-center mb-5">My Journey 🚀</h1>
-            <li>
-                <div class="timeline-start mb-10 md:text-end">
-                    <time class="font-mono italic text-xl">Present</time>
-                    <div class="text-lg font-black"><a href="https://www.projectfriendshipmentoring.org/"
-                            target="_blank" class="text-primary">App
-                            Developer
-                        </a> & Teaching Assistant</div>
-                    During my last year of college, I worked as an App
-                    Developer
-                    for <a href="https://www.projectfriendshipmentoring.org/" target="_blank"
-                        class="text-primary">Project Friendship</a>, a local non-profit organization. There, I
-                    sharpened my backend and cloud infrastructure skills. I also completed course on Quantum Computing
-                    while serving as a Teaching Assistant for a senior-level
-                    algorithms
-                    course. After that, I was a Machine Learning and "All Around" Teaching Assistant for the department.
-                    I also spent the
-                    year as a research follow for the <a class="text-primary" href="https://wp.stolaf.edu/cir/">Center
-                        for Interdisciplinary Research</a>. I also got inducted into the national honors society for
-                    history, Phi Alpha Theta. Finally, I graduated Magna Cum Laude from St. Olaf College
-                    with a Bachelor
-                    of Arts in Computer Science and History, along with a concentration in Statistics and Data Science.
-                </div>
-                <div class="timeline-middle">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
-                        <path fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
-                <div class="timeline-end mb-10 md:text-end lg:ml-10 text-2xl">
-                    <img class="max-w-50" src="programming.png">
-                </div>
-                <hr />
-            </li>
-            <li>
-                <hr />
-                <div class="timeline-start mb-10 md:text-end lg:ml-10 text-2xl">
-                    <img class="max-w-50" src="developer.png">
-                </div>
-                <div class="timeline-middle">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
-                        <path fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
-                <div class="timeline-end md:mb-10">
-                    <time class="font-mono italic text-xl">2025</time>
-                    <div class="text-lg font-black"><a href="https://wp.stolaf.edu/pipercenter/ole-cup/" target="_blank"
-                            class="text-primary">Ole Cup Success</a> & Started <a
-                            href="https://www.linkedin.com/posts/victory-ma-724942256_im-excited-to-announce-that-ill-be-joining-activity-7320237655403741185-f_WR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8koYwB3nEPEmVlPmMq4FWCpzJ87lK0gMw"
-                            target="_blank" class="text-primary">Software Engineer
-                            Internship</a></div>
-                    In the spring, I completed courses on data science, statistical learning, and machine learning. My
-                    team
-                    also
-                    won the People's
-                    Choice Award at St. Olaf College's Ole Cup 2025! I helped design, develop, and market an app called
-                    BloomMates, you can find more information about it <a href="https://thebloommates.com"
-                        target="_blank" class="text-primary">here</a>. I also served as a teaching
-                    assistant for the computer science department. In the summer, I worked at GCS Geospatial as a
-                    Software
-                    Engineer intern and continued working on personal projects.
-                </div>
-                <hr />
-            </li>
-            <li>
-                <hr />
-                <div class="timeline-middle">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
-                        <path fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
-                <div class="timeline-start mb-10 md:text-end">
-                    <time class="font-mono italic text-xl">2024</time>
-                    <div class="text-lg font-black">Worked for the <a href="https://wp.stolaf.edu/mscs" target="_blank"
-                            class="text-primary">MSCS Department</a>
-                    </div>
-                    I worked under a professor teaching an introductory statistics course, and continued completing
-                    personal
-                    projects and certifications. I completed courses on ethics in software design, statistics, hardware
-                    design, and
-                    analyzing algorithms.
-                </div>
-                <div class="timeline-end mb-10 md:text-end lg:ml-10 text-2xl">
-                    <img class="max-w-50" src="math.png">
-                </div>
-                <hr />
-            </li>
-            <li>
-                <hr />
-                <div class="timeline-start mb-10 md:text-end lg:ml-10 text-2xl">
-                    <img class="max-w-50" src="certificate.png">
-                </div>
-                <div class="timeline-middle">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
-                        <path fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
-                <div class="timeline-end md:mb-10">
-                    <time class="font-mono italic text-xl">2023</time>
-                    <div class="text-lg font-black">Worked Toward & Received <a
-                            href="https://www.linkedin.com/in/victory-ma-724942256/details/certifications/"
-                            target="_blank" class="text-primary">Certifications</a></div>
-                    Outside of class, I worked towards completing various projects and certifications,
-                    mostly pertaining to
-                    frontend and backend web development. I also completed courses on data structures in C++ and
-                    software
-                    design.
-                </div>
-                <hr />
-            </li>
-            <li>
-                <div class="timeline-middle">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-7 w-7">
-                        <path fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
-                <div class="timeline-start mb-10 md:text-end lg:ml-10">
-                    <time class="font-mono italic text-xl">2022</time>
-                    <div class="text-lg font-black">Enrolled at <a href="https://wp.stolaf.edu" target="_blank"
-                            class="text-primary">St.
-                            Olaf College</a></div>
-                    After much deliberation, I decided to take myself to Northfield, Minnesota and pursue a Bachelor of
-                    Arts
-                    in Computer Science and History at the small private liberal arts institution of St. Olaf College.
-                </div>
-                <hr />
-                <div class="timeline-end mb-10 md:text-end lg:ml-10 text-2xl">
-                    <img class="max-w-50" src="school.png">
-                </div>
-            </li>
-        </ul>
+      <ul
+        class="bg-base-200 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical px-10 lg:px-30"
+      >
+        <h1 class="text-3xl lg:text-5xl font-bold text-center mb-5">
+          My Journey 🚀
+        </h1>
+        <li>
+          <div class="timeline-start mb-10 md:text-end">
+            <time class="font-mono italic text-xl">Present</time>
+            <div class="text-lg font-black">
+              <a
+                href="https://www.projectfriendshipmentoring.org/"
+                target="_blank"
+                class="text-primary"
+                >App Developer
+              </a>
+              & Teaching Assistant
+            </div>
+            During my last year of college, I worked as an App Developer for
+            <a
+              href="https://www.projectfriendshipmentoring.org/"
+              target="_blank"
+              class="text-primary"
+              >Project Friendship</a
+            >, a local non-profit organization. There, I sharpened my backend
+            and cloud infrastructure skills. I also completed course on Quantum
+            Computing while serving as a Teaching Assistant for a senior-level
+            algorithms course. After that, I was a Machine Learning and "All
+            Around" Teaching Assistant for the department. I also spent the year
+            as a research follow for the
+            <a class="text-primary" href="https://wp.stolaf.edu/cir/"
+              >Center for Interdisciplinary Research</a
+            >. I also got inducted into the national honors society for history,
+            Phi Alpha Theta. Finally, I graduated Magna Cum Laude from St. Olaf
+            College with a Bachelor of Arts in Computer Science and History,
+            along with a concentration in Statistics and Data Science.
+          </div>
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-7 w-7"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="timeline-end mb-10 md:text-end lg:ml-10 text-2xl">
+            <img class="max-w-50" src="programming.png" />
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-start mb-10 md:text-end lg:ml-10 text-2xl">
+            <img class="max-w-50" src="developer.png" />
+          </div>
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-7 w-7"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="timeline-end md:mb-10">
+            <time class="font-mono italic text-xl">2025</time>
+            <div class="text-lg font-black">
+              <a
+                href="https://wp.stolaf.edu/pipercenter/ole-cup/"
+                target="_blank"
+                class="text-primary"
+                >Ole Cup Success</a
+              >
+              & Started
+              <a
+                href="https://www.linkedin.com/posts/victory-ma-724942256_im-excited-to-announce-that-ill-be-joining-activity-7320237655403741185-f_WR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8koYwB3nEPEmVlPmMq4FWCpzJ87lK0gMw"
+                target="_blank"
+                class="text-primary"
+                >Software Engineer Internship</a
+              >
+            </div>
+            In the spring, I completed courses on data science, statistical
+            learning, and machine learning. My team also won the People's Choice
+            Award at St. Olaf College's Ole Cup 2025! I helped design, develop,
+            and market an app called BloomMates, you can find more information
+            about it
+            <a
+              href="https://thebloommates.com"
+              target="_blank"
+              class="text-primary"
+              >here</a
+            >. I also served as a teaching assistant for the computer science
+            department. In the summer, I worked at GCS Geospatial as a Software
+            Engineer intern and continued working on personal projects.
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-7 w-7"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="timeline-start mb-10 md:text-end">
+            <time class="font-mono italic text-xl">2024</time>
+            <div class="text-lg font-black">
+              Worked for the
+              <a
+                href="https://wp.stolaf.edu/mscs"
+                target="_blank"
+                class="text-primary"
+                >MSCS Department</a
+              >
+            </div>
+            I worked under a professor teaching an introductory statistics
+            course, and continued completing personal projects and
+            certifications. I completed courses on ethics in software design,
+            statistics, hardware design, and analyzing algorithms.
+          </div>
+          <div class="timeline-end mb-10 md:text-end lg:ml-10 text-2xl">
+            <img class="max-w-50" src="math.png" />
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div class="timeline-start mb-10 md:text-end lg:ml-10 text-2xl">
+            <img class="max-w-50" src="certificate.png" />
+          </div>
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-7 w-7"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="timeline-end md:mb-10">
+            <time class="font-mono italic text-xl">2023</time>
+            <div class="text-lg font-black">
+              Worked Toward & Received
+              <a
+                href="https://www.linkedin.com/in/victory-ma-724942256/details/certifications/"
+                target="_blank"
+                class="text-primary"
+                >Certifications</a
+              >
+            </div>
+            Outside of class, I worked towards completing various projects and
+            certifications, mostly pertaining to frontend and backend web
+            development. I also completed courses on data structures in C++ and
+            software design.
+          </div>
+          <hr />
+        </li>
+        <li>
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-7 w-7"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="timeline-start mb-10 md:text-end lg:ml-10">
+            <time class="font-mono italic text-xl">2022</time>
+            <div class="text-lg font-black">
+              Enrolled at
+              <a
+                href="https://wp.stolaf.edu"
+                target="_blank"
+                class="text-primary"
+                >St. Olaf College</a
+              >
+            </div>
+            After much deliberation, I decided to take myself to Northfield,
+            Minnesota and pursue a Bachelor of Arts in Computer Science and
+            History at the small private liberal arts institution of St. Olaf
+            College.
+          </div>
+          <hr />
+          <div class="timeline-end mb-10 md:text-end lg:ml-10 text-2xl">
+            <img class="max-w-50" src="school.png" />
+          </div>
+        </li>
+      </ul>
     </main>
 
-    <footer class="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
-        <p class="font-bold">
-            Created by Victory Ma - 2025 👨🏻‍💻
-            <br />
-            No A.I. was used in the making of this website.
-            <a href="https: //www.flaticon.com/free-icons/developer" title="Icon attribution">Icons
-                created by
-                Freepik -
-                Flaticon</a>
-        </p>
+    <footer
+      class="footer footer-horizontal footer-center bg-primary text-primary-content p-10"
+    >
+      <p class="font-bold">
+        Created by Victory Ma - 2025 👨🏻‍💻
+        <br />
+
+        <a
+          href="https: //www.flaticon.com/free-icons/developer"
+          title="Icon attribution"
+          >Icons created by Freepik - Flaticon</a
+        >
+      </p>
     </footer>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Get theme contorller and current theme
-            const themeController = document.getElementById('theme-controller');
-            const currentTheme = document.documentElement.getAttribute('data-theme')
+      document.addEventListener('DOMContentLoaded', () => {
+        // Get theme contorller and current theme
+        const themeController = document.getElementById('theme-controller');
+        const currentTheme =
+          document.documentElement.getAttribute('data-theme');
 
-            // Light/dark AWS logo
-            const darkAWS = document.getElementById('aws-logo1');
-            const lightAWS = document.getElementById('aws-logo2');
+        // Light/dark AWS logo
+        const darkAWS = document.getElementById('aws-logo1');
+        const lightAWS = document.getElementById('aws-logo2');
 
-            if (savedTheme === 'dark') {
-                darkAWS.classList.add('hidden');
-            } else {
-                lightAWS.classList.add('hidden');
-            }
+        if (savedTheme === 'dark') {
+          darkAWS.classList.add('hidden');
+        } else {
+          lightAWS.classList.add('hidden');
+        }
 
-            // Controller is checked if the current theme light
-            themeController.checked = currentTheme === 'light';
+        // Controller is checked if the current theme light
+        themeController.checked = currentTheme === 'light';
 
-            // If controller is clicked...
-            themeController.addEventListener('change', (event) => {
-                // If controller is checked, set theme to light
-                if (event.target.checked) {
-                    document.documentElement.setAttribute('data-theme', 'light');
-                    localStorage.setItem('theme', 'light');
-                    lightAWS.classList.add("hidden")
-                    darkAWS.classList.remove("hidden")
-                    // If controller is not checked, set theme to dark
-                } else {
-                    document.documentElement.setAttribute('data-theme', 'dark');
-                    localStorage.setItem('theme', 'dark');
-                    darkAWS.classList.add('hidden')
-                    lightAWS.classList.remove('hidden')
-                }
-            })
+        // If controller is clicked...
+        themeController.addEventListener('change', (event) => {
+          // If controller is checked, set theme to light
+          if (event.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+            lightAWS.classList.add('hidden');
+            darkAWS.classList.remove('hidden');
+            // If controller is not checked, set theme to dark
+          } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            darkAWS.classList.add('hidden');
+            lightAWS.classList.remove('hidden');
+          }
         });
+      });
     </script>
-</body>
-
+  </body>
 </html>
