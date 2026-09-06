@@ -12,6 +12,8 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-sm: 24rem;
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -29,6 +31,7 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-black: 900;
+    --radius-xl: 0.75rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -5776,9 +5779,6 @@
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
-  .w-24 {
-    width: calc(var(--spacing) * 24);
-  }
   .w-27 {
     width: calc(var(--spacing) * 27);
   }
@@ -5940,6 +5940,9 @@
       }
     }
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-box {
     border-radius: var(--radius-box);
   }
@@ -5951,6 +5954,9 @@
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -6078,6 +6084,10 @@
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -6147,11 +6157,17 @@
       --alert-color: var(--color-warning);
     }
   }
+  .text-base-200 {
+    color: var(--color-base-200);
+  }
   .text-base-content {
     color: var(--color-base-content);
   }
   .text-info {
     color: var(--color-info);
+  }
+  .text-neutral {
+    color: var(--color-neutral);
   }
   .text-primary {
     color: var(--color-primary);
@@ -6668,6 +6684,11 @@
   .md\:text-end {
     @media (width >= 48rem) {
       text-align: end;
+    }
+  }
+  .md\:text-start {
+    @media (width >= 48rem) {
+      text-align: start;
     }
   }
   .lg\:ml-10 {

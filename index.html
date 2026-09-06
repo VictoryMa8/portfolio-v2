@@ -155,11 +155,15 @@
               👨🏻‍💻 👋🏻
             </h1>
             <h2 class="text-2xl lg:text-3xl pt-8 font-[Alegreya]">
-              Recent
-              <span class="text-primary italic">Magna Cum Laude</span> graduate
-              of St. Olaf College with a
-              <span class="text-primary italic"
-                >B.A. in Computer Science and History</span
+              <span class="block"
+                ><span class="text-primary">Jr. Software Engineer</span> at
+                Najaxa Software</span
+              >
+              <span class="block"
+                >Recent graduate of St. Olaf College with a
+                <span class="text-primary italic"
+                  >B.A. <span class="text-base-content">in</span> Computer Science <span class="text-base-content">and</span> History</span
+                ></span
               >
             </h2>
             <p class="py-8 text-xl lg:text-2xl font-[Alegreya]">
@@ -169,18 +173,11 @@
             <div
               class="flex flex-wrap md:flex-row items-center justify-end gap-2 mb-4"
             >
-              <img class="w-20" src="R-logo.png" /><img
-                class="w-20"
-                src="python-logo.png"
-              />
-              <img id="aws-logo1" class="w-20" src="aws-logo1.png" /><img
-                id="aws-logo2"
-                class="w-20"
-                src="aws-logo2.png"
-              /><img class="w-24" src="django-logo.png" /><img
-                class="w-20"
-                src="tailwind-logo.png"
-              />
+              <img class="w-20" src="csharp.webp"/>
+              <img class="w-20 rounded-full" src="aspnet.svg"/>
+              <img class="w-20" src="vue.webp"/>
+              <img class="w-20" src="tailwind-logo.png"/>
+              <img class="w-20" src="sql-server.webp"/>
             </div>
             <div class="flex flex-row justify-end items-center gap-2">
               <a
@@ -200,7 +197,7 @@
                   Projects 💾
                 </button></a
               >
-              <a href="vma-resume-june-3.pdf" target="_blank"
+              <a href="vma-resume-sep-6.pdf" target="_blank"
                 ><button class="h-16 btn btn-primary text-xl">
                   Resume 📄
                 </button></a
@@ -217,16 +214,49 @@
           My Journey 🚀
         </h1>
         <li>
-          <div class="timeline-start mb-10 md:text-end">
+          <hr />
+          <div class="timeline-start mb-10 md:text-end lg:ml-10 text-2xl">
+            <img class="max-w-50" src="programmer.png" />
+          </div>
+          <div class="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="h-7 w-7"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="timeline-end mb-10 md:text-start">
             <time class="font-mono italic text-xl">Present</time>
+            <div class="text-lg font-black">
+              <a
+                href="https://najaxasoftware.com"
+                target="_blank"
+                class="text-primary"
+                >Jr. Software Engineer
+              </a>
+            </div>
+            In July, I started working as a Junior Software Engineer for Najaxa Software. There, I've been supporting the development of the team's flagship staffing solution named Najaxa Middle Office. From frontend design, to API development, to E2E testing, to unit testing, and much more, Najaxa has allowed me to develop into a much more rounded engineer. I've been able to both apply myself and learn so much about software engineering. The team has been extraordinary; I'm quite grateful for everyone I've been working with. I'm excited to see what lies ahead!
+          </div>
+          <hr />
+        </li>
+        <li>
+          <div class="timeline-start mb-10 md:text-end">
+            <time class="font-mono italic text-xl">2026</time>
             <div class="text-lg font-black">
               <a
                 href="https://www.projectfriendshipmentoring.org/"
                 target="_blank"
                 class="text-primary"
-                >App Developer
+                >App Developer,
               </a>
-              & Teaching Assistant
+              Teaching Assistant, & Graduate
             </div>
             During my last year of college, I worked as an App Developer for
             <a
@@ -435,7 +465,7 @@
       class="footer footer-horizontal footer-center bg-primary text-primary-content p-10"
     >
       <p class="font-bold">
-        Created by Victory Ma - 2025 👨🏻‍💻
+        Created by Victory Ma - 2026 👨🏻‍💻
         <br />
 
         <a
@@ -449,18 +479,7 @@
       document.addEventListener('DOMContentLoaded', () => {
         // Get theme contorller and current theme
         const themeController = document.getElementById('theme-controller');
-        const currentTheme =
-          document.documentElement.getAttribute('data-theme');
-
-        // Light/dark AWS logo
-        const darkAWS = document.getElementById('aws-logo1');
-        const lightAWS = document.getElementById('aws-logo2');
-
-        if (savedTheme === 'dark') {
-          darkAWS.classList.add('hidden');
-        } else {
-          lightAWS.classList.add('hidden');
-        }
+        const currentTheme = document.documentElement.getAttribute('data-theme');
 
         // Controller is checked if the current theme light
         themeController.checked = currentTheme === 'light';
@@ -471,14 +490,10 @@
           if (event.target.checked) {
             document.documentElement.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light');
-            lightAWS.classList.add('hidden');
-            darkAWS.classList.remove('hidden');
             // If controller is not checked, set theme to dark
           } else {
             document.documentElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
-            darkAWS.classList.add('hidden');
-            lightAWS.classList.remove('hidden');
           }
         });
       });
