@@ -34,9 +34,12 @@
     />
     <link rel="manifest" href="./site.webmanifest" />
     <script>
-      // Get theme from local storage (other script block at the bottom of body)
       const savedTheme = localStorage.getItem('theme');
-      document.documentElement.setAttribute('data-theme', savedTheme);
+      const theme =
+        savedTheme === 'light' || savedTheme === 'dark'
+          ? savedTheme
+          : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
     </script>
   </head>
 
@@ -111,7 +114,7 @@
             id="theme-controller"
             type="checkbox"
             value="light"
-            class="toggle theme-controller"
+            class="toggle"
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"
