@@ -1,262 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victory's Portfolio</title>
-    <link rel="stylesheet" href="./styles/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="manifest" href="./site.webmanifest">
-    <script>
-        const savedTheme = localStorage.getItem('theme');
-        const theme =
-            savedTheme === 'light' || savedTheme === 'dark'
-                ? savedTheme
-                : 'dark';
-        document.documentElement.setAttribute('data-theme', theme);
-    </script>
+    <script src="./script.js"></script>
 </head>
 
-<body class="font-[Ubuntu] flex flex-col min-h-screen">
-    <div class="navbar bg-base-100 shadow-sm">
-        <div class="navbar-start w-27 mr-auto">
-            <div class="dropdown pr-0">
-                <div tabindex="0" role="button" class="btn lg:hidden p-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                </div>
-                <ul tabindex="-1"
-                    class="menu menu-sm dropdown-content bg-base-200 rounded-box z-1 mt-3 w-52 py-2 shadow">
-                    <li><a class="text-2xl" href="projects.html">Projects</a></li>
-                    <li><a class="text-2xl" href="essays.html">Essays</a></li>
-                    <li><a class="text-2xl" href="blog.html">Blog</a></li>
-                    <li><a class="text-2xl text-primary" href="who.html">Who's Victory?</a></li>
-                </ul>
+<body class="bg-canvas font-mono text-[15px] leading-[1.8] text-ink">
+    <header
+        class="mx-auto w-full px-6 flex max-w-[820px] flex-wrap items-center gap-x-6 gap-y-3 pt-[34px] max-desktop:gap-2 max-desktop:pt-[22px] print:hidden">
+        <a class="whitespace-nowrap text-base text-ink no-underline hover:underline leading-[inherit]"
+            href="index.html">Victory Ma</a>
+        <nav
+            class="ml-auto flex flex-wrap items-center gap-x-[14px] text-[13px] max-desktop:ml-0 max-desktop:w-full leading-[inherit]">
+            <a class="inline-flex min-h-11 items-center text-muted no-underline hover:underline"
+                href="index.html">home</a><a
+                class="inline-flex min-h-11 items-center text-muted no-underline hover:underline"
+                href="projects.html">projects</a><a
+                class="inline-flex min-h-11 items-center text-muted no-underline hover:underline"
+                href="blog.html">blog</a><a class="inline-flex min-h-11 items-center text-ink decoration-accent"
+                href="essays.html">essays</a><a
+                class="inline-flex min-h-11 items-center text-muted no-underline hover:underline"
+                href="who.html">about</a><a
+                class="inline-flex min-h-11 items-center text-muted no-underline hover:underline"
+                href="contact.html">contact</a><button
+                class="flex min-h-11 items-center gap-[7px] bg-transparent px-1 text-[13px] text-muted [&>span:first-child]:text-[19px] leading-[inherit]"
+                type="button" id="theme-toggle">theme</button>
+        </nav>
+    </header>
+    <main id="main" class="mx-auto w-full max-w-[720px] px-6 min-h-[65vh] pt-[76px] pb-16 max-desktop:pt-12">
+        <div class="mb-8">
+            <h1 class="font-display text-5xl leading-[1.1] font-medium tracking-[-.7px] max-desktop:text-[40px]">Essays
+            </h1>
+            <p class="mt-4 text-muted">Essays are not A.I. generated. Written by a human. That human being me.</p>
+        </div>
+        <article
+            class="last:border-b-0 mt-4 border-b border-l-[3px] border-rule border-l-accent bg-panel p-[22px] [&:nth-of-type(3n+2)]:border-l-gold [&:nth-of-type(3n)]:border-l-coral">
+            <div class="flex items-baseline gap-4">
+                <h2 class="text-[21px] leading-[1.5] font-medium tracking-[-.5px]">Strategic Leaders, Creek
+                    Decentralization, and American Animosity in the Revolutionary Era</h2>
             </div>
-            <a href="index.html" class="btn btn-ghost text-2xl text-primary font-[Alegreya] pl-2">Victory Ma<span
-                    class="text-base-content hidden md:block">|
-                    Portfolio</span></a>
-        </div>
-        <div class="navbar-center hidden lg:flex mx-auto">
-            <ul class="menu menu-horizontal px-1 text-2xl">
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="essays.html">Essays</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a class="text-2xl text-primary" href="who.html">Who's Victory?</a></li>
-            </ul>
-        </div>
-        <div class="navbar-end ml-auto w-27">
-            <label class="flex cursor-pointer gap-2 mr-2 mt-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-                <input id="theme-controller" type="checkbox" value="light" class="toggle" />
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="5" />
-                    <path
-                        d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
-                </svg>
-            </label>
-            <a href="contact.html" class="btn text-lg lg:text-2xl">Contact</a>
-        </div>
-    </div>
-
-    <main class="grow">
-        <h2 class="mt-4 text-3xl text-center font-[Alegreya] my-4 mx-4">Essays are not A.I. generated. Written by a
-            human.
-            That human being me.</h2>
-        <ul class="list bg-base-100 rounded-box shadow-md lg:px-40">
-
-            <li class="list-row flex flex-col sm:flex-row">
-                <div class="flex flex-row gap-4">
-                    <img class="size-24 rounded-box" src="./paper.png" />
-                    <div class="text-xl">Strategic Leaders, Creek Decentralization, and American Animosity in the
-                        Revolutionary Era</div>
-                </div>
-                <div class="text-lg uppercase font-semibold opacity-60">An analysis of Muscogee society during the
-                    Revolutionary War period</div>
-                <div class="flex flex-row gap-4">
-                    <a href="vma-muscogee.pdf" target="_blank"><button
-                            class="btn btn-soft btn-primary w-30 h-16 text-2xl">View</button></a>
-                    <a href="vma-muscogee.pdf" download><button
-                            class="btn btn-soft btn-primary w-16 h-16 text-2xl p-0"><img class="w-13 h-13"
-                                src="download.png"></button></a>
-                </div>
-            </li>
-
-            <li class="list-row flex flex-col sm:flex-row">
-                <div class="flex flex-row gap-4">
-                    <img class="size-24 rounded-box" src="./paper.png" />
-                    <div class="text-xl">“Class Struggle” in the Roman Republic:
-                        Difficulty and Progress in Utilizing a Marxist Framework to Understand Ancient Issues</div>
-                </div>
-                <div class="text-lg uppercase font-semibold opacity-60">An anaylsis of class struggle in late republican
-                    Rome</div>
-                <div class="flex flex-row gap-4">
-                    <a href="vma-class-struggle.pdf" target="_blank"><button
-                            class="btn btn-soft btn-primary w-30 h-16 text-2xl">View</button></a>
-                    <a href="vma-class-struggle.pdf" download><button
-                            class="btn btn-soft btn-primary w-16 h-16 text-2xl p-0"><img class="w-13 h-13"
-                                src="download.png"></button></a>
-                </div>
-            </li>
-
-            <li class="list-row flex flex-col sm:flex-row">
-                <div class="flex flex-row gap-4">
-                    <img class="size-24 rounded-box" src="./paper.png" />
-                    <div class="text-xl w-60">Alexander's Assimilation into Persia</div>
-                </div>
-                <div class="text-lg uppercase font-semibold opacity-60">How did Persia's culture and customs influence
-                    Alexander's conquests? Did Persia, in a way, "conquer" the Hellenic world?</div>
-                <div class="flex flex-row gap-4">
-                    <a href="vma-alexanders-assimilation.pdf" target="_blank"><button
-                            class="btn btn-soft btn-primary w-30 h-16 text-2xl">View</button></a>
-                    <a href="vma-alexanders-assimilation.pdf" download><button
-                            class="btn btn-soft btn-primary w-16 h-16 text-2xl p-0"><img class="w-13 h-13"
-                                src="download.png"></button></a>
-                </div>
-            </li>
-
-            <li class="list-row flex flex-col sm:flex-row">
-                <div class="flex flex-row gap-4">
-                    <img class="size-24 rounded-box" src="./paper.png" />
-                    <div class="text-xl w-60">Alkibiades and the Hermai</div>
-                </div>
-                <div class="text-lg uppercase font-semibold opacity-60">An analsysis of the Hermai Incidident and
-                    Alkibiades' part in it, and how it contributed to the fall of Athenian democracy</div>
-                <div class="flex flex-row gap-4">
-                    <a href="vma-alkibiades-hermai.pdf" target="_blank"><button
-                            class="btn btn-soft btn-primary w-30 h-16 text-2xl">View</button></a>
-                    <a href="vma-alkibiades-hermai.pdf" download><button
-                            class="btn btn-soft btn-primary w-16 h-16 text-2xl p-0"><img class="w-13 h-13"
-                                src="download.png"></button></a>
-                </div>
-            </li>
-
-            <li class="list-row flex flex-col sm:flex-row">
-                <div class="flex flex-row gap-4">
-                    <img class="size-24 rounded-box" src="./paper.png" />
-                    <div class="text-xl w-60">Kant and Kierkegaard</div>
-                </div>
-                <div class="text-lg uppercase font-semibold opacity-60 grow min-w-0">An analsysis of the ways in
-                    which Kant and
-                    Kierkegaard approach religion</div>
-                <div class="flex flex-row gap-4">
-                    <a href="vma-kant-kierkegaard.pdf" target="_blank"><button
-                            class="btn btn-soft btn-primary w-30 h-16 text-2xl">View</button></a>
-                    <a href="vma-kant-kierkegaard.pdf" download><button
-                            class="btn btn-soft btn-primary w-16 h-16 text-2xl p-0"><img class="w-13 h-13"
-                                src="download.png"></button></a>
-                </div>
-            </li>
-
-            <li class="list-row flex flex-col sm:flex-row">
-                <div class="flex flex-row gap-4">
-                    <img class="size-24 rounded-box" src="./paper.png" />
-                    <div class="text-xl w-60">La délicatesse</div>
-                </div>
-                <div class="text-lg uppercase font-semibold opacity-60">An essay, written in French, that explores the
-                    characters in David Foenkinos' La délicatesse and how they contribute to the central message of the
-                    novel</div>
-                <div class="flex flex-row gap-4">
-                    <a href="vma-la-delicatesse.pdf" target="_blank"><button
-                            class="btn btn-soft btn-primary w-30 h-16 text-2xl">View</button></a>
-                    <a href="vma-la-delicatesse.pdf" download><button
-                            class="btn btn-soft btn-primary w-16 h-16 text-2xl p-0"><img class="w-13 h-13"
-                                src="download.png"></button></a>
-                </div>
-            </li>
-
-            <li class="list-row flex flex-col sm:flex-row">
-                <div class="flex flex-row gap-4">
-                    <img class="size-24 rounded-box" src="./paper.png" />
-                    <div class="text-xl w-60">May 1968 & 1789 to Present</div>
-                </div>
-                <div class="text-lg uppercase font-semibold opacity-60">A double-essay that explores the events that
-                    lead up to the current French Republic and how French society is influenced by its past, its
-                    colonies, and other nations</div>
-                <div class="flex flex-row gap-4">
-                    <a href="vma-modern-france.pdf" target="_blank"><button
-                            class="btn btn-soft btn-primary w-30 h-16 text-2xl">View</button></a>
-                    <a href="vma-modern-france.pdf" download><button
-                            class="btn btn-soft btn-primary w-16 h-16 text-2xl p-0"><img class="w-13 h-13"
-                                src="download.png"></button></a>
-                </div>
-            </li>
-
-            <li class="list-row flex flex-col sm:flex-row">
-                <div class="flex flex-row gap-4">
-                    <img class="size-24 rounded-box" src="./paper.png" />
-                    <div class="text-xl w-70">The Disentanglement and Re-embedding of Therapeutic Persons</div>
-                </div>
-                <div class="text-lg uppercase font-semibold opacity-60">An exploratory analysis of anxiety, therapy,
-                    fulfillment, social status, and descriptions of what
-                    "the self" means in modern China.</div>
-                <div class="flex flex-row gap-4">
-                    <a href="vma-therapeutic-persons.pdf" target="_blank"><button
-                            class="btn btn-soft btn-primary w-30 h-16 text-2xl">View</button></a>
-                    <a href="vma-therapeutic-persons.pdf" download><button
-                            class="btn btn-soft btn-primary w-16 h-16 text-2xl p-0"><img class="w-13 h-13"
-                                src="download.png"></button></a>
-                </div>
-            </li>
-
-        </ul>
+            <p class="mt-[10px] text-sm text-muted leading-[inherit]">An analysis of Muscogee society during the
+                Revolutionary War period</p>
+            <div class="mt-[14px] flex flex-wrap gap-x-5 gap-y-2 text-xs leading-[inherit]"><a
+                    class="inline-flex min-h-8 items-center" href="./vma-muscogee.pdf" target="_blank">read essay
+                    ↗</a><a class="inline-flex min-h-8 items-center" href="./vma-muscogee.pdf" download>download PDF
+                    ↓</a>
+            </div>
+        </article>
+        <article
+            class="last:border-b-0 mt-4 border-b border-l-[3px] border-rule border-l-accent bg-panel p-[22px] [&:nth-of-type(3n+2)]:border-l-gold [&:nth-of-type(3n)]:border-l-coral">
+            <div class="flex items-baseline gap-4">
+                <h2 class="text-[21px] leading-[1.5] font-medium tracking-[-.5px]">“Class Struggle” in the Roman
+                    Republic: Difficulty and Progress in Utilizing a Marxist Framework to Understand Ancient Issues</h2>
+            </div>
+            <p class="mt-[10px] text-sm text-muted leading-[inherit]">An anaylsis of class struggle in late republican
+                Rome</p>
+            <div class="mt-[14px] flex flex-wrap gap-x-5 gap-y-2 text-xs leading-[inherit]"><a
+                    class="inline-flex min-h-8 items-center" href="./vma-class-struggle.pdf" target="_blank">read essay
+                    ↗</a><a class="inline-flex min-h-8 items-center" href="./vma-class-struggle.pdf" download>download
+                    PDF ↓</a>
+            </div>
+        </article>
+        <article
+            class="last:border-b-0 mt-4 border-b border-l-[3px] border-rule border-l-accent bg-panel p-[22px] [&:nth-of-type(3n+2)]:border-l-gold [&:nth-of-type(3n)]:border-l-coral">
+            <div class="flex items-baseline gap-4">
+                <h2 class="text-[21px] leading-[1.5] font-medium tracking-[-.5px]">Alexander's Assimilation into Persia
+                </h2>
+            </div>
+            <p class="mt-[10px] text-sm text-muted leading-[inherit]">How did Persia's culture and customs influence
+                Alexander's conquests? Did Persia, in a way, "conquer" the Hellenic world?</p>
+            <div class="mt-[14px] flex flex-wrap gap-x-5 gap-y-2 text-xs leading-[inherit]"><a
+                    class="inline-flex min-h-8 items-center" href="./vma-alexanders-assimilation.pdf"
+                    target="_blank">read essay ↗</a><a class="inline-flex min-h-8 items-center"
+                    href="./vma-alexanders-assimilation.pdf" download>download PDF ↓</a>
+            </div>
+        </article>
+        <article
+            class="last:border-b-0 mt-4 border-b border-l-[3px] border-rule border-l-accent bg-panel p-[22px] [&:nth-of-type(3n+2)]:border-l-gold [&:nth-of-type(3n)]:border-l-coral">
+            <div class="flex items-baseline gap-4">
+                <h2 class="text-[21px] leading-[1.5] font-medium tracking-[-.5px]">Alkibiades and the Hermai</h2>
+            </div>
+            <p class="mt-[10px] text-sm text-muted leading-[inherit]">An analsysis of the Hermai Incidident and
+                Alkibiades' part in it, and how it contributed to the fall of Athenian democracy</p>
+            <div class="mt-[14px] flex flex-wrap gap-x-5 gap-y-2 text-xs leading-[inherit]"><a
+                    class="inline-flex min-h-8 items-center" href="./vma-alkibiades-hermai.pdf" target="_blank">read
+                    essay ↗</a><a class="inline-flex min-h-8 items-center" href="./vma-alkibiades-hermai.pdf"
+                    download>download PDF ↓</a>
+            </div>
+        </article>
+        <article
+            class="last:border-b-0 mt-4 border-b border-l-[3px] border-rule border-l-accent bg-panel p-[22px] [&:nth-of-type(3n+2)]:border-l-gold [&:nth-of-type(3n)]:border-l-coral">
+            <div class="flex items-baseline gap-4">
+                <h2 class="text-[21px] leading-[1.5] font-medium tracking-[-.5px]">Kant and Kierkegaard</h2>
+            </div>
+            <p class="mt-[10px] text-sm text-muted leading-[inherit]">An analsysis of the ways in which Kant and
+                Kierkegaard approach religion</p>
+            <div class="mt-[14px] flex flex-wrap gap-x-5 gap-y-2 text-xs leading-[inherit]"><a
+                    class="inline-flex min-h-8 items-center" href="./vma-kant-kierkegaard.pdf" target="_blank">read
+                    essay ↗</a><a class="inline-flex min-h-8 items-center" href="./vma-kant-kierkegaard.pdf"
+                    download>download PDF ↓</a>
+            </div>
+        </article>
+        <article
+            class="last:border-b-0 mt-4 border-b border-l-[3px] border-rule border-l-accent bg-panel p-[22px] [&:nth-of-type(3n+2)]:border-l-gold [&:nth-of-type(3n)]:border-l-coral">
+            <div class="flex items-baseline gap-4">
+                <h2 class="text-[21px] leading-[1.5] font-medium tracking-[-.5px]">La délicatesse</h2>
+            </div>
+            <p class="mt-[10px] text-sm text-muted leading-[inherit]">An essay, written in French, that explores the
+                characters in David Foenkinos' La délicatesse and how they contribute to the central message of the
+                novel</p>
+            <div class="mt-[14px] flex flex-wrap gap-x-5 gap-y-2 text-xs leading-[inherit]"><a
+                    class="inline-flex min-h-8 items-center" href="./vma-la-delicatesse.pdf" target="_blank">read essay
+                    ↗</a><a class="inline-flex min-h-8 items-center" href="./vma-la-delicatesse.pdf" download>download
+                    PDF ↓</a>
+            </div>
+        </article>
+        <article
+            class="last:border-b-0 mt-4 border-b border-l-[3px] border-rule border-l-accent bg-panel p-[22px] [&:nth-of-type(3n+2)]:border-l-gold [&:nth-of-type(3n)]:border-l-coral">
+            <div class="flex items-baseline gap-4">
+                <h2 class="text-[21px] leading-[1.5] font-medium tracking-[-.5px]">May 1968 & 1789 to Present</h2>
+            </div>
+            <p class="mt-[10px] text-sm text-muted leading-[inherit]">A double-essay that explores the events that lead
+                up to the current French Republic and how French society is influenced by its past, its colonies, and
+                other nations</p>
+            <div class="mt-[14px] flex flex-wrap gap-x-5 gap-y-2 text-xs leading-[inherit]"><a
+                    class="inline-flex min-h-8 items-center" href="./vma-modern-france.pdf" target="_blank">read essay
+                    ↗</a><a class="inline-flex min-h-8 items-center" href="./vma-modern-france.pdf" download>download
+                    PDF ↓</a>
+            </div>
+        </article>
+        <article
+            class="last:border-b-0 mt-4 border-b border-l-[3px] border-rule border-l-accent bg-panel p-[22px] [&:nth-of-type(3n+2)]:border-l-gold [&:nth-of-type(3n)]:border-l-coral">
+            <div class="flex items-baseline gap-4">
+                <h2 class="text-[21px] leading-[1.5] font-medium tracking-[-.5px]">The Disentanglement and Re-embedding
+                    of Therapeutic Persons</h2>
+            </div>
+            <p class="mt-[10px] text-sm text-muted leading-[inherit]">An exploratory analysis of anxiety, therapy,
+                fulfillment, social status, and descriptions of what "the self" means in modern China.</p>
+            <div class="mt-[14px] flex flex-wrap gap-x-5 gap-y-2 text-xs leading-[inherit]"><a
+                    class="inline-flex min-h-8 items-center" href="./vma-therapeutic-persons.pdf" target="_blank">read
+                    essay ↗</a><a class="inline-flex min-h-8 items-center" href="./vma-therapeutic-persons.pdf"
+                    download>download PDF ↓</a>
+            </div>
+        </article>
     </main>
-
-    <footer class="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
-        <p class="font-bold">
-            Created by Victory Ma - 2026 👨🏻‍💻
-            <br />
-            <span>Not an A.I. generated website.</span>
-
-            <a href="https: //www.flaticon.com/free-icons/document"
-                title="Document and download icon attribution">Document and
-                download icons created by
-                Freepik -
-                Flaticon</a>
-        </p>
+    <footer
+        class="mx-auto w-full max-w-[720px] px-6 flex flex-wrap items-center justify-between gap-3 border-t border-rule pt-7 pb-10 text-[11px] text-muted print:hidden leading-[inherit]">
+        <span>Victory Ma · 2026</span>
+        <div class="flex flex-wrap gap-x-[18px] gap-y-1 text-[13px] leading-[inherit]"><a
+                class="inline-flex min-h-8 items-center text-muted" href="https://github.com/VictoryMa8"
+                target="_blank">github ↗</a><a class="inline-flex min-h-8 items-center text-muted"
+                href="https://www.linkedin.com/in/victory-ma-724942256/" target="_blank">linkedin ↗</a><a
+                class="inline-flex min-h-8 items-center text-muted" href="contact.html">get in touch</a>
+        </div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Get theme contorller and current theme
-            const themeController = document.getElementById('theme-controller');
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-
-            // Controller is checked if the current theme light
-            themeController.checked = currentTheme === 'light';
-
-            // If controller is clicked...
-            themeController.addEventListener('change', (event) => {
-                // If controller is checked, set theme to light
-                if (event.target.checked) {
-                    document.documentElement.setAttribute('data-theme', 'light');
-                    localStorage.setItem('theme', 'light');
-                    // If controller is not checked, set theme to dark
-                } else {
-                    document.documentElement.setAttribute('data-theme', 'dark');
-                    localStorage.setItem('theme', 'dark');
-                }
-            })
-        });
-    </script>
 </body>
 
 </html>

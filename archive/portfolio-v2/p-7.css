@@ -1,0 +1,62 @@
+body {
+    font-family: 'IBM Plex Mono', sans-serif;
+    background-color: #415a77;
+    color: #e7ecef;
+}
+
+#game {
+    background-color: #1b263b;
+    padding: 50px 10px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    height: 900px;
+}
+
+#player-stats, #text-boxes, #inventory {
+    background-color: #0d1b2a;
+    padding: 40px 10px;
+    border: 2px outset #e7ecef;
+    width: 30%;
+}
+
+#text-boxes {
+    text-align: center;
+    position: relative;
+}
+
+#buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #e7ecef;
+    padding: 20px;
+    height: 25%;
+}
+
+button {
+    height: 25%;
+    width: 30%;
+    margin: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#back-btn {
+    background-color: #132238;
+    border: 2px outset #132238;
+    border-radius: 4px;
+    color: #e7ecef;
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin: 20px;
+    width: 25%;
+    height: 30px;
+    text-align: center;
+    padding: 10px 30px;
+}

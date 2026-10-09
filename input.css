@@ -1,0 +1,79 @@
+@import "tailwindcss" source(none);
+@source "./index.html";
+@source "./projects.html";
+@source "./essays.html";
+@source "./blog.html";
+@source "./who.html";
+@source "./contact.html";
+
+/* Shared palette and font definitions; page layouts live in the HTML. */
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('assets/fonts/eb-garamond.ttf') format('truetype');
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('assets/fonts/IBMPlexMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('assets/fonts/IBMPlexMono-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('assets/fonts/IBMPlexMono-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('assets/fonts/IBMPlexMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('assets/fonts/IBMPlexMono-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@theme inline {
+  --color-canvas: var(--bg);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-rule: var(--border);
+  --color-panel: var(--panel);
+  --color-gold: var(--gold);
+  --color-coral: var(--coral);
+  --font-display: 'EB Garamond', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+@theme { --breakpoint-desktop: 701px; }
+@layer base {
+  :root {
+    color-scheme: dark;
+    --bg:#0b120f; --text:#eeeede; --muted:#aeb9ac; --accent:#96dca0;
+    --border:#344a3b; --focus:#b1e5a9; --panel:#13291d; --gold:#e5c783; --coral:#f0968c;
+  }
+  :root[data-theme='light'] {
+    color-scheme: light;
+    --bg:#f5f5e9; --text:#21382a; --muted:#526451; --accent:#2b6a3c;
+    --border:#bccbb6; --focus:#2b6a3c; --panel:#e2ecd7; --gold:#76601f; --coral:#974837;
+  }
+  a { color:var(--accent); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:5px; overflow-wrap:anywhere; }
+  a:focus-visible, button:focus-visible { outline:2px solid var(--focus); outline-offset:5px; }
+  button { cursor:pointer; }
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory's Portfolio</title>
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        const theme =
+            savedTheme === 'light' || savedTheme === 'dark'
+                ? savedTheme
+                : 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+    </script>
+</head>
+
+<body class="font-[Ubuntu] flex flex-col min-h-screen">
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start w-27 mr-auto">
+            <div class="dropdown pr-0">
+                <div tabindex="0" role="button" class="btn lg:hidden p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="-1"
+                    class="menu menu-sm dropdown-content bg-base-200 rounded-box z-1 mt-3 w-52 py-2 shadow">
+                    <li><a class="text-2xl" href="projects.html">Projects</a></li>
+                    <li><a class="text-2xl" href="essays.html">Essays</a></li>
+                    <li><a class="text-2xl" href="blog.html">Blog</a></li>
+                    <li><a class="text-2xl text-primary" href="who.html">Who's Victory?</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="btn btn-ghost text-2xl text-primary font-[Alegreya] pl-2">Victory Ma<span
+                    class="text-base-content hidden md:block">|
+                    Portfolio</span></a>
+        </div>
+        <div class="navbar-center hidden lg:flex mx-auto">
+            <ul class="menu menu-horizontal px-1 text-2xl">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="essays.html">Essays</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="text-2xl text-primary" href="who.html">Who's Victory?</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end ml-auto w-27">
+            <label class="flex cursor-pointer gap-2 mr-2 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <input id="theme-controller" type="checkbox" value="light" class="toggle" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5" />
+                    <path
+                        d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+                </svg>
+            </label>
+            <a href="contact.html" class="btn text-lg lg:text-2xl">Contact</a>
+        </div>
+    </div>
+
+    <main class="grow flex flex-col items-center">
+        <h1 class="mt-4 text-4xl text-primary font-[Alegreya]">Personal Blog</h1>
+        <h2 class="mt-4 text-3xl text-center font-[Alegreya] mx-4">Entries are not A.I. generated. This is straight from
+            the
+            heart.</h2>
+        <div class="card mt-4 lg:card-side bg-base-100 shadow-sm mb-10">
+            <figure>
+                <img class="max-w-90 md:min-w-150" src="burga.jpg" alt="Scene from the film" />
+            </figure>
+            <div class="card-body gap-4">
+                <h2 class="card-title text-xl"><i class="text-primary">JL Beers</i> October 3rd, 2026
+                </h2>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    For the record, I do not drink. I'm not sure why the restaurant is called JL Beers, but I went there
+                    for dinner, and I wanted to post about it. That is a non-alcoholic beverage in the image. It's been
+                    a while since I've written a food review, so hopefully this goes well.
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg"> I was on a walk downtown and I wanted to treat myself to
+                    something nice. I heard that this place had good burgers so I decided to try it out. It's a small,
+                    relatively cozy bar, mom and pop vibes.
+                    I thought this place was pretty solid! First off, the
+                    burger was actually super good, and distinct
+                    from other places. I believe they use a potato bun, which makes the bread very soft and satisfying
+                    to chew. It certainly adds to the "burger eating" experience. And the beef tasted quite good; they
+                    season it very well and smash it so there's a nice crust to it. The American cheese is also great, I
+                    feel like simpler is usually better when it comes to burgers. The burger as a whole experience, was
+                    really great. It felt like I was eating the burger from <i>The Menu</i>. If you know you know.
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    The fries were pretty decent, I believe I got the garlic parmesean fries. What I liked about them
+                    was the fact that they were super fresh and seasoned pretty well. It felt like I was actually eating
+                    potato, rather than just frozen greasy slop. Well, it was greasy, but at least I felt like I was
+                    eating real food ya know? Sometimes you eat fries and you just feel like shit after, because it's so
+                    processed and/or oily. These were fresh and good overall. My only issue with them is the texture.
+                    You know when you try to make fries at home from potatoes, and the overall "mouth feel" seems off?
+                    Like it's a more "fluffy potato" texture rather than a "snappy" texture you'd get from a restaurant.
+                    Yeah, it's like that. It's not necessarily that bad of an issue, and maybe that's just a side effect
+                    of fresh potatoes, but it's noticeable.
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    Lastly, I had this hoppy sparkling water thing. I actually thought it was quite good. It has that
+                    funkiness you'd get from beer without the poison. I enjoy sparkling water a lot, and this one was
+                    really good. It has like a nice cypress/herbal or woody flavor if that makes sense. I'm not really
+                    an expert on these kinds of things. My only issue is the fact that it's priced like it's beer. Like
+                    cmon brother, I'm not actually drinking a beer so why am I paying alcohol prices?
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    Anyways, I'd definitely come again! It wasn't too expensive, but wasn't too cheap either. I think I
+                    just expect to pay $15-20 before tip for a nice meal at a restaurant nowadays. It's not the best
+                    situation, but it is what it is, I suppose. I'll give this experience a <b>6 out of 7.</b>
+                </p>
+                <div class="card-actions justify-end">
+                    <a href="https://jlbeers.com" target="_blank"><button class="btn btn-primary">Visit
+                            Them!</button></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4 lg:card-side bg-base-100 shadow-sm mb-10">
+            <figure>
+                <img class="max-w-90 md:min-w-150" src="inception.png" alt="Scene from the film" />
+            </figure>
+            <div class="card-body gap-4">
+                <h2 class="card-title text-xl"><i class="text-primary">Inception</i> September 13th, 2026
+                </h2>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    A few weeks ago, my friends and I watched Inception. All of us did not see it until that point. I'm
+                    a big fan of Christopher Nolan, so I was quite interested in seeing another one of his films. After
+                    all, Interstellar is one of my favorite movies of all time. This
+                    one did not disappoint at all either.
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    This film has very few faults. I thought the acting was always on point, the cinematography was
+                    beautiful, the action wasn't too cliché, the soundtrack was one of the best I've heard, and the
+                    overarching emotional narrative was touching. Leonardo DiCaprio, although a bit of a weird fella,
+                    is a helluva actor. He holds some real gravity whenever he's on screen. I
+                    feel as though he's excellent at both subtle and grand emotions. The way his character dances around
+                    talking about the death of his wife was both intriguing and tragic. Speaking of which, Marion
+                    Cotillard is exceptional. The way she can flip between an antagonist (as a part of the subconscious
+                    in
+                    a dream) and a tragic victim of this inception induced psychosis is nothing short of
+                    incredible. Cillian Murphy was also amazing. Despite not having as many lines as the others up until
+                    the third
+                    act, he really does steal the show.
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    Nolan loves his complex narratives and near-to-distant future scientific ideas. I'd say it's fairly
+                    difficult to pull off these semi-sci-fi movies, because of how much work it takes to make the plot
+                    "feel" believeable. A viewer can only suspend their belief so much. He makes the side effects of
+                    the dreams so intense that it really pulls you in. It's tetering on the edge of something out of
+                    Black Mirror (even though this came first). The best parts of his films is when
+                    there is an emotional tie-in that is connected to all the crazy mind-binding, world-altering,
+                    crazy-insane ideas. You see this in
+                    Interstellar. You (sadly) don't see this in Tenet (even though I love that movie). It's the fact
+                    that you can truly relate to the love and passion that's being shown on screen. The characters
+                    convey loss, sadness, and love and you feel that with them. It's what sets him apart from typical
+                    hollywood
+                    action filmography. It's a heist movie
+                    that captivates you both mentally and emotionally. Not just through sheer audible or visual sensory.
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    There's more I feel like I should say, but honestly you just have to watch the film. The score is
+                    great, the acting is near perfect, the shots are exceptional... what's not to love. I suppose my
+                    only gripe is the fact that the only reason the plot happens is because some energy tycoon wants to
+                    continue his dominance in the industry. Like, are we really risking our lives just to satisfy
+                    Japanese Exxon Mobil? Ah whatever, at least we get to see a beautiful happy
+                    ending with Cobb and his children. You win this time Nolan. <b>6.5 out of 7.</b>
+                </p>
+                <div class="card-actions justify-end">
+                    <a href="https://www.imdb.com/title/tt1375666/?ref_=ext_shr_lnk" target="_blank"><button
+                            class="btn btn-primary">Watch It!</button></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4 lg:card-side bg-base-100 shadow-sm mb-10">
+            <figure>
+                <img class="max-w-90 md:min-w-150" src="the-drama.webp" alt="Scene from the film" />
+            </figure>
+            <div class="card-body gap-4">
+                <h2 class="card-title text-xl"><i class="text-primary">The Drama</i> September 7th, 2026
+                </h2>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    After a long day, my girlfriend and I decided to watch a movie together. We both recently saw <i>The
+                        Odyssey</i>, and enjoyed it quite a bit. I personally really like Robert Pattinson as an actor,
+                    so I thought this would be a great film to watch. I've also liked Zendaya in things like <i>Dune</i>
+                    or <i>Spiderman</i>. Funny enough, they're both in <i>The Odyssey</i>, and they did great jobs in
+                    their respective roles.
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    During the first few 20 minutes of <i>The Drama</i>, I was a bit skeptical. It was giving <i>You</i>
+                    (2018) vibes plus a litle bit of something else that I can't really put my finger on. But, after the
+                    dinner scene, I thought it really started to pick up in the "thrilling" department. After that, it's
+                    kind of a rollercoaster. The movie overall makes you reflect on a multitude of things. Childhood
+                    trauma, gun violence, redeemability, romantic partners, and everything in between.
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    I thought the second act was the best part of the film. The way Robert and Zendaya deliberate,
+                    argue, and reflect truly seems realistic and acts as a showcase of true human emotion. After <i>the
+                        incident</i> with Robert's character at the office, the third act was kind of meh. It seemed out
+                    of character in my opinion. The way he went back and forth with his emotions earlier made it seem
+                    like he truly loved his to-be-wife despite the horrifying news. After that, although the final
+                    wedding scene keeps you on your seat, it reads like your typical "uh oh something bad is gonna
+                    happen at this wedding!" kind-of scene.
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    In summary, there is some dark imagery in this movie, quite a lot of vomitting actually, and some
+                    decisions by characters that make you question society. But it does raise some interesting points in
+                    general, so I'm glad that this was produced so it can be ruminated among the masses. And the acting
+                    was really good in my opinion. There is also a lot of good comedy hits, and it's kind of weird
+                    laughing throughout such a disturbing film. Robert has some good comedic timing. Last thing is that
+                    I think this film actually makes you micro-dose on the Breaking Bad treatment. What I mean is that
+                    it makes you sympathize with someone that, out of context, would seem very strange to sympathize
+                    with. But with just the right amount of exposition and exposure to the reactions of other
+                    characters, you do indeed start to feel pity for this character. Good film! Would definitely
+                    recommend. <b>6 out of 7.</b>
+                </p>
+                <div class="card-actions justify-end">
+                    <a href="https://www.imdb.com/title/tt33071426/" target="_blank"><button
+                            class="btn btn-primary">Watch It!</button></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4 lg:card-side bg-base-100 shadow-sm mb-10">
+            <figure>
+                <img class="max-w-90 md:min-w-150" src="budapest2.webp" alt="Scene from the film" />
+            </figure>
+            <div class="card-body gap-4">
+                <h2 class="card-title text-xl"><i class="text-primary">The Grand Budapest Hotel</i> January 18, 2026
+                </h2>
+                <p class="max-w-100 md:max-w-150 text-lg">Over the long weekend, my girlfriend and I decided to watch a
+                    film
+                    we both haven't seen before: The Grand Budapest Hotel by Wes Anderson. A film that, after watching
+                    it for the first time, might be one of my favorite movies to date. This review intends to be as
+                    spolier-free as possible.
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    This is the first Wes Anderson film I've ever watched, and I'm glad it was. It's incredibly
+                    accessible, hilarious, and touching at times. Ralph Fiennes and Tony Revolori are exceptional actors
+                    and they have great chemistry on-screen. Last year I watched <i>The Menu</i> with Fiennes, and that
+                    was also an incredible watch, in large part due to his performance. He has this sort of gravity to
+                    him that keeps you glued to the screen. His charisma is pretty amazing as M. Gustave; I think Wes
+                    Anderson did a great job at making him a relatable yet enigmatic character. Many of the other
+                    characters were also superb additions to the story. Dimitri, Joplin, and Henckels added a pefect
+                    amount of intensity for this kind of murder mystery adventure film.
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    I thought the plot, overall theme, and message of the film were very well executed. Despite being
+                    quite lighthearted at times, the message of keeping one's humanity in the face of facist (or simply
+                    violent) barbarism is able to reach the viewer quite easily. I thought the dynamic between the older
+                    Gustave and the younger Zero, being from two different worlds yet experiencing the same violence,
+                    but at two different points of their life... absolute cinema. The fact that the settings were mostly
+                    in fictional places was a great choice, I believe. It allows the viewer to place themselves in these
+                    positions and allows them to fill in the gaps with their own experiences or ideas. At the same time,
+                    I thought that making the facist army resemble real-life events was a great choice as well. There is
+                    this certain emotional atmosphere that enters into films with this particular regime. Wes Anderson
+                    allows that emotional gravity to enter without completely making the film about real history; his
+                    choice to do
+                    that was excellent in my opinion. He is able to capture the viewer and bring them into this
+                    whimsical yet violent world that is very much adjacent to ours, and he makes us reflect on how we
+                    got here. He makes us reflect on what's going on in our world, a world that never ceases with its
+                    violence and barbarism. These characters, these untimely and gruesome deaths, these events, they are
+                    all slightly unrealistic at times. And yet, they provoke us to
+                    think
+                    about how we cope with loss, fear, or troubling environments. Whether it's reaching for our cologne
+                    that reminds of better times, or continuing habits that allow us to grasp at a time when the
+                    violence
+                    didn't engulf us completely, I think Wes Anderson understands how a large majority of people feel
+                    when it comes to facing world events and injustice happening across the globe.
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    To pivot, I
+                    thought
+                    that the
+                    cinematography was truly stunning. The wide shots and incredible splashes of color were beautiful.
+                    This definitely makes me want to see more films by Wes Anderson. I really enjoy how unorthodox the
+                    scenes looked; there is a unique tinge of character to every part of the film. Perhaps my only gripe
+                    would be
+                    the
+                    visual effects
+                    during the sledding or
+                    snow scenes. They took me out of the movie just a little bit, as it wasn't particularly realistic.
+                    In terms of the overall story-within-a-story narrative, I thought it was executed quite
+                    thoughtfully. The older Zero speaking to the young writer was a well-crafted and charming
+                    interaction. I thought it was the perfect touch to the main story, and sort of wraps it into this
+                    nice bow at the end. I
+                    recommend this film very much so, I
+                    would rate it a
+                    <b>6.75 out of 7!</b>
+                </p>
+                <div class="card-actions justify-end">
+                    <a href="https://www.imdb.com/title/tt2278388/" target="_blank"><button
+                            class="btn btn-primary">Watch It!</button></a></button>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4 lg:card-side bg-base-100 shadow-sm mb-10">
+            <figure>
+                <img class="max-w-90 md:min-w-150" src="food1.jpeg" alt="Restaurant inside" />
+            </figure>
+            <div class="card-body gap-4">
+                <h2 class="card-title text-xl"><i class="text-primary">Al Madina</i> December 30, 2025</h2>
+                <p class="max-w-100 md:max-w-150 text-lg">My friends and I decided to go out and try out some west asian
+                    food
+                    while
+                    I was in
+                    town for winter
+                    break. I always drive by this spot on North Broadway, downtown Rochester. Parking is pretty simple,
+                    there is street parking and even a parking ramp nearby (which is free in the evening). We got some
+                    menus from the counter, sat down, and looked at our options.
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    There were few options, which is a good sign. Whatever they do, they must do very well. I decided to
+                    try their falafel sandwich combo, which was about ten dollars. It included a falafel wrap, french
+                    fries, and a drink. I was able to select a
+                    drink from their fridge, which was right next to the cash register. They had regular pop and some
+                    international drinks. I decided to try out this Turkish currant soft drink, it was pretty good! In
+                    terms of the falafel sandwich, it was also delicious. The fries were decent; they came out plain,
+                    but you can salt them yourself obviously. I tried my friend's chicken shawarma, and wow, it was
+                    amazing. The spices made it incredibly flavorful, and it was so juicy, you wouldn't believe it.
+                </p>
+                <p class="max-w-100 md:max-w-150 text-lg">
+                    If you get anything from this place,
+                    get the chicken shawarma. Whatever sauce they had in both wraps were good as well. It's a casual
+                    place run by a few chill guys. I want to come back, I noticed on their menu that they had
+                    traditional family style "feasts", which seemed super flavorful just looking at the pictures. I'm
+                    not sure who the owners are, but from the pictures and iconography, they are of Iraqi or Palestinian
+                    origin. I recommend this place, I would rate it a <b>6.5 out of 7!</b>
+                </p>
+                <div class="card-actions justify-end">
+                    <a href="https://share.google/zxpc9S01c3mZro9cu" target="_blank"><button
+                            class="btn btn-primary">Visit
+                            Them!</button></a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
+        <footer class="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
+            <p class="font-bold">
+                Created by Victory Ma - 2026 👨🏻‍💻
+                <br />
+
+                <span>Not an A.I. generated website.</span>
+            </p>
+        </footer>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get theme contorller and current theme
+            const themeController = document.getElementById('theme-controller');
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+
+            // Controller is checked if the current theme light
+            themeController.checked = currentTheme === 'light';
+
+            // If controller is clicked...
+            themeController.addEventListener('change', (event) => {
+                // If controller is checked, set theme to light
+                if (event.target.checked) {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    localStorage.setItem('theme', 'light');
+                    // If controller is not checked, set theme to dark
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('theme', 'dark');
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

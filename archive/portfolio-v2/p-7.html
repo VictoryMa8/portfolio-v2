@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jersey+10&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="p-7.css">
+    <title>The Nuclear Wasteland</title>
+</head>
+
+<body>
+    <div id="game">
+        <div id="player-stats">
+            <!-- Player XP & Gold -->
+            <h3>XP: <span id="xp-text"></span></h3>
+            <h3>XP to Next Level: <span id="xptnl-text"></span></h3>
+            <h3>Gold: <span id="gold-text"></span></h3>
+            <!-- Health -->
+            <h3>Health: <span id="hp-text"></span></h3>
+            <h3>Max Health: <span id="maxhp-text"></span></h3>
+            <!-- Attack, Speed, and Defense -->
+            <h3>Atk: <span id="atk-text"></span></h3>
+            <h3>Def: <span id="def-text"></span></h3>
+            <h3>Spd: <span id="spd-text"></span></h3>
+        </div>
+        <div id="text-boxes">
+            <!-- Text Boxes -->
+            <h2 id="text-1">...</h1>
+                <h2 id="text-2">...</h2>
+                <div id="buttons">
+                    <button id="btn-1">1</button>
+                    <button id="btn-2">2</button>
+                    <br>
+                    <button id="btn-3">3</button>
+                    <button id="btn-4">4</button>
+                    <button id="btn-5">5</button>
+                </div>
+        </div>
+        <div id="inventory">
+            <!-- Player Inventory & Current Weapon -->
+            <h2>Inventory: <span id="inv-text"></span></h3>
+                <h2>Current Weapon: <span id="currweap-text"></span></h3>
+                    <h2>(For Developers) Current Screen: <span id="currscre-text"></span></h4>
+        </div>
+        <h3>Created by Victory Ma - 2024</h3>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="p-7.js"></script>
+</body>
+
+</html>

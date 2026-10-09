@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victory's Portfolio</title>
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <style>
+        @media (min-width: 1024px) {
+            .project-list {
+                max-width: 56rem;
+                margin-inline: auto;
+            }
+
+            .project-card {
+                container-type: inline-size;
+            }
+
+            .project-subtitle {
+                max-width: 50cqw;
+            }
+        }
+    </style>
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        const theme =
+            savedTheme === 'light' || savedTheme === 'dark'
+                ? savedTheme
+                : 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+    </script>
+</head>
+
+<body class="font-[Ubuntu] flex flex-col min-h-screen">
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start w-27 mr-auto">
+            <div class="dropdown pr-0">
+                <div tabindex="0" role="button" class="btn lg:hidden p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="-1"
+                    class="menu menu-sm dropdown-content bg-base-200 rounded-box z-1 mt-3 w-52 py-2 shadow">
+                    <li><a class="text-2xl" href="projects.html">Projects</a></li>
+                    <li><a class="text-2xl" href="essays.html">Essays</a></li>
+                    <li><a class="text-2xl" href="blog.html">Blog</a></li>
+                    <li><a class="text-2xl text-primary" href="who.html">Who's Victory?</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="btn btn-ghost text-2xl text-primary font-[Alegreya] pl-2">Victory Ma<span
+                    class="text-base-content hidden md:block">|
+                    Portfolio</span></a>
+        </div>
+        <div class="navbar-center hidden lg:flex mx-auto">
+            <ul class="menu menu-horizontal px-1 text-2xl">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="essays.html">Essays</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="text-2xl text-primary" href="who.html">Who's Victory?</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end ml-auto w-27">
+            <label class="flex cursor-pointer gap-2 mr-2 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <input id="theme-controller" type="checkbox" value="light" class="toggle" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5" />
+                    <path
+                        d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+                </svg>
+            </label>
+            <a href="contact.html" class="btn text-lg lg:text-2xl">Contact</a>
+        </div>
+    </div>
+
+    <main class="grow">
+        <ul class="project-list list bg-base-100 rounded-box shadow-md px-4 sm:px-8 lg:px-10">
+
+            <li>
+                <a href="https://vexillologists.com" target="_blank" rel="noopener noreferrer"
+                    class="project-card list-row flex flex-col sm:flex-row sm:items-center gap-4 rounded-box transition duration-200 ease-out hover:z-10 hover:scale-[1.05]">
+                    <div class="flex size-28 shrink-0 items-center justify-center">
+                        <img class="h-24 w-24 object-contain rounded-box" src="./vexillologists-icon.png" alt="" />
+                    </div>
+                    <div class="grow min-w-0">
+                        <div class="text-2xl">Vexillologists.com</div>
+                        <div class="project-subtitle text-lg font-semibold opacity-60">A place to learn flags, explore
+                            the world, and
+                            play fun, easygoing daily challenges ⛳️</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="ml-auto size-8 shrink-0 self-end opacity-60 sm:self-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://linktr.ee/bloommates" target="_blank" rel="noopener noreferrer"
+                    class="project-card list-row flex flex-col sm:flex-row sm:items-center gap-4 bg-base-200 rounded-box transition duration-200 ease-out hover:z-10 hover:scale-[1.05]">
+                    <div class="flex size-28 shrink-0 items-center justify-center">
+                        <img class="h-24 w-24 object-contain rounded-box" src="./bloommates.svg" alt="" />
+                    </div>
+                    <div class="grow min-w-0">
+                        <div class="text-2xl">BloomMates</div>
+                        <div class="project-subtitle text-lg font-semibold opacity-60">People's Choice Award at Ole Cup
+                            2025; A mental
+                            health and social connections app centered around giving flowers 🌸</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="ml-auto size-8 shrink-0 self-end opacity-60 sm:self-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://ismi-arabic.vercel.app" target="_blank" rel="noopener noreferrer"
+                    class="project-card list-row flex flex-col sm:flex-row sm:items-center gap-4 rounded-box transition duration-200 ease-out hover:z-10 hover:scale-[1.05]">
+                    <div class="flex size-28 shrink-0 items-center justify-center">
+                        <img class="h-24 w-24 object-contain rounded-box" src="./ismi-icon.svg" alt="" />
+                    </div>
+                    <div class="grow min-w-0">
+                        <div class="text-2xl">Ismi</div>
+                        <div class="project-subtitle text-lg font-semibold opacity-60">An Arabic learning app built
+                            around
+                            practical conversations, courses, and a 15-minute daily study plan 🗣️</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="ml-auto size-8 shrink-0 self-end opacity-60 sm:self-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="vma-ml-presentation.pdf" target="_blank" rel="noopener noreferrer"
+                    class="project-card list-row flex flex-col sm:flex-row sm:items-center gap-4 bg-base-200 rounded-box transition duration-200 ease-out hover:z-10 hover:scale-[1.05]">
+                    <div class="flex size-28 shrink-0 items-center justify-center">
+                        <img class="h-20 w-20 object-contain rounded-box" src="brain.png" alt="" />
+                    </div>
+                    <div class="grow min-w-0">
+                        <div class="text-2xl">ML: Predicting Intent</div>
+                        <div class="project-subtitle text-lg font-semibold opacity-60">Showcasing the process of
+                            creating a model to
+                            predict whether an online shopper will buy
+                            something based on their actions 💻</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="ml-auto size-8 shrink-0 self-end opacity-60 sm:self-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://omnom-lake.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    class="project-card list-row flex flex-col sm:flex-row sm:items-center gap-4 rounded-box transition duration-200 ease-out hover:z-10 hover:scale-[1.05]">
+                    <div class="flex size-28 shrink-0 items-center justify-center">
+                        <img class="h-24 w-24 object-contain rounded-box" src="./omnom-icon.svg" alt="" />
+                    </div>
+                    <div class="grow min-w-0">
+                        <div class="text-2xl">omnom AI</div>
+                        <div class="project-subtitle text-lg font-semibold opacity-60">An AI-assisted food diary that
+                            turns
+                            natural-language or voice meal descriptions into macro tracking with exportable data 🍽️
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="ml-auto size-8 shrink-0 self-end opacity-60 sm:self-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://ekklesia-7ek1.onrender.com/" target="_blank" rel="noopener noreferrer"
+                    class="project-card list-row flex flex-col sm:flex-row sm:items-center gap-4 bg-base-200 rounded-box transition duration-200 ease-out hover:z-10 hover:scale-[1.05]">
+                    <div class="flex size-28 shrink-0 items-center justify-center">
+                        <img class="h-24 w-24 object-contain rounded-box" src="./ekklesia.png" alt="" />
+                    </div>
+                    <div class="grow min-w-0">
+                        <div class="text-2xl">Ekklesia</div>
+                        <div class="project-subtitle text-lg font-semibold opacity-60">A study companion for those who
+                            enjoy the
+                            pomodoro technique ☑️</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="ml-auto size-8 shrink-0 self-end opacity-60 sm:self-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://victoryma8.github.io/nuclear-winter/" target="_blank" rel="noopener noreferrer"
+                    class="project-card list-row flex flex-col sm:flex-row sm:items-center gap-4 rounded-box transition duration-200 ease-out hover:z-10 hover:scale-[1.05]">
+                    <div class="flex size-28 shrink-0 items-center justify-center text-7xl leading-none">🌨️</div>
+                    <div class="grow min-w-0">
+                        <div class="text-2xl">Nuclear Winter</div>
+                        <div class="project-subtitle text-lg font-semibold opacity-60">A remake of Nuclear Wasteland as
+                            a top-down
+                            pixel-art RPG ☢️</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="ml-auto size-8 shrink-0 self-end opacity-60 sm:self-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://victoryma8.github.io/learning-docker/" target="_blank" rel="noopener noreferrer"
+                    class="project-card list-row flex flex-col sm:flex-row sm:items-center gap-4 bg-base-200 rounded-box transition duration-200 ease-out hover:z-10 hover:scale-[1.05]">
+                    <div class="flex size-28 shrink-0 items-center justify-center text-7xl leading-none">🐳</div>
+                    <div class="grow min-w-0">
+                        <div class="text-2xl">Docker Harbor</div>
+                        <div class="project-subtitle text-lg font-semibold opacity-60">A hands-on, gamified guide to
+                            running apps in
+                            containers 🐳</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="ml-auto size-8 shrink-0 self-end opacity-60 sm:self-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="vma-pokemon-presentation.pdf" target="_blank" rel="noopener noreferrer"
+                    class="project-card list-row flex flex-col sm:flex-row sm:items-center gap-4 rounded-box transition duration-200 ease-out hover:z-10 hover:scale-[1.05]">
+                    <div class="flex size-28 shrink-0 items-center justify-center">
+                        <img class="h-24 w-24 object-contain rounded-box" src="avatar.png" alt="" />
+                    </div>
+                    <div class="grow min-w-0">
+                        <div class="text-2xl">ML: Predicting Pokemon Types</div>
+                        <div class="project-subtitle text-lg font-semibold opacity-60">Predicts a Pokémon's type from
+                            its personal stats
+                            and
+                            other various traits 🐯</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="ml-auto size-8 shrink-0 self-end opacity-60 sm:self-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://victoryma8.github.io/the-odyssey/" target="_blank" rel="noopener noreferrer"
+                    class="project-card list-row flex flex-col sm:flex-row sm:items-center gap-4 bg-base-200 rounded-box transition duration-200 ease-out hover:z-10 hover:scale-[1.05]">
+                    <div class="flex size-28 shrink-0 items-center justify-center text-7xl leading-none">🏺</div>
+                    <div class="grow min-w-0">
+                        <div class="text-2xl">The Odyssey: Visualized</div>
+                        <div class="project-subtitle text-lg font-semibold opacity-60">A visual storyboard of Homer's
+                            Odyssey, with
+                            artwork and an essay all made by me (made before Christopher Nolan's rendition!) 😉</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="ml-auto size-8 shrink-0 self-end opacity-60 sm:self-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="./p-5.html" target="_blank" rel="noopener noreferrer"
+                    class="project-card list-row flex flex-col sm:flex-row sm:items-center gap-4 rounded-box transition duration-200 ease-out hover:z-10 hover:scale-[1.05]">
+                    <div class="flex size-28 shrink-0 items-center justify-center text-7xl leading-none">🏀</div>
+                    <div class="grow min-w-0">
+                        <div class="text-2xl">Roster Management System</div>
+                        <div class="project-subtitle text-lg font-semibold opacity-60">One of my first coding projects;
+                            run an NBA front
+                            office, build a roster
+                            and see how the season plays out ⛹️</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="ml-auto size-8 shrink-0 self-end opacity-60 sm:self-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="vma-camilli-food.html" target="_blank" rel="noopener noreferrer"
+                    class="project-card list-row flex flex-col sm:flex-row sm:items-center gap-4 bg-base-200 rounded-box transition duration-200 ease-out hover:z-10 hover:scale-[1.05]">
+                    <div class="flex size-28 shrink-0 items-center justify-center text-7xl leading-none">🌍</div>
+                    <div class="grow min-w-0">
+                        <div class="text-2xl">Data Analysis of Food Security</div>
+                        <div class="project-subtitle text-lg font-semibold opacity-60">A look at how politics and daily
+                            life relate to
+                            food security across Africa 🥙</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="ml-auto size-8 shrink-0 self-end opacity-60 sm:self-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="p-7.html" target="_blank" rel="noopener noreferrer"
+                    class="project-card list-row flex flex-col sm:flex-row sm:items-center gap-4 rounded-box transition duration-200 ease-out hover:z-10 hover:scale-[1.05]">
+                    <div class="flex size-28 shrink-0 items-center justify-center text-7xl leading-none">☢️</div>
+                    <div class="grow min-w-0">
+                        <div class="text-2xl">Nuclear Wasteland</div>
+                        <div class="project-subtitle text-lg font-semibold opacity-60">An (unfinished) action RPG where
+                            the choices you
+                            make change
+                            the story 🛤️</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="ml-auto size-8 shrink-0 self-end opacity-60 sm:self-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </li>
+
+            <li>
+                <a href="vma-given-90s-computers.pdf" target="_blank" rel="noopener noreferrer"
+                    class="project-card list-row flex flex-col sm:flex-row sm:items-center gap-4 bg-base-200 rounded-box transition duration-200 ease-out hover:z-10 hover:scale-[1.05]">
+                    <div class="flex size-28 shrink-0 items-center justify-center">
+                        <img class="h-20 w-20 object-contain rounded-box" src="computer.png" alt="" />
+                    </div>
+                    <div class="grow min-w-0">
+                        <div class="text-2xl">Predicting Computer Prices</div>
+                        <div class="project-subtitle text-lg font-semibold opacity-60">A small look into predicting what
+                            a 1990s computer
+                            would have cost
+                            from its specs 💾</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="ml-auto size-8 shrink-0 self-end opacity-60 sm:self-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M18 13v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                    </svg>
+                </a>
+            </li>
+
+        </ul>
+    </main>
+
+    <footer class="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
+        <p class="font-bold">
+            Created by Victory Ma - 2026 👨🏻‍💻
+            <br />
+            <span>Not an A.I. generated website.</span>
+            <a href="https: //www.flaticon.com/free-icons/developer" title="Icon attribution">Icons created by Freepik -
+                Flaticon</a>
+        </p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get theme contorller and current theme
+            const themeController = document.getElementById('theme-controller');
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+
+            // Controller is checked if the current theme light
+            themeController.checked = currentTheme === 'light';
+
+            // If controller is clicked...
+            themeController.addEventListener('change', (event) => {
+                // If controller is checked, set theme to light
+                if (event.target.checked) {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    localStorage.setItem('theme', 'light');
+                    // If controller is not checked, set theme to dark
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('theme', 'dark');
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>
